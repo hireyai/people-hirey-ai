@@ -9,74 +9,590 @@
 <link rel="canonical" href="https://people.hirey.ai/p/walter-wu" />
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "Person", "name": "Walter Wu", "url": "https://people.hirey.ai/p/walter-wu", "description": "Walter Wu explains the HiRey thesis from the Launch Map stage: agents can do the workflow around finding people, follow-up, and scheduling, while trusted humans keep judgment, vouching, and high-stakes introductions.", "jobTitle": "Founder of HiRey, building an agent-amplified trusted introducer network", "homeLocation": "San Francisco", "sameAs": ["https://hi.hirey.ai/owner/212"]}, {"@context": "https://schema.org", "@type": "VideoObject", "name": "Walter Wu on Founder of HiRey, building an agent-amplified trusted introducer network", "description": "Walter Wu explains the HiRey thesis from the Launch Map stage: agents can do the workflow around finding people, follow-up, and scheduling, while trusted humans keep judgment, vouching, and high-stakes introductions.", "uploadDate": "2026-06-17", "contentUrl": "https://people.hirey.ai/assets/video/walter-wu-hirey-stage-pitch-0255-720p.mp4", "transcript": "Everyone on earth should be connected by their agents. The co-founder, the hire, the mentor, the person you need is already out there, but the tools we use today were built for attention and known contacts, not for trusted strangers to meet. HiRey is a network for humans with agents: agents handle finding, follow-up, and scheduling, while humans keep the relationship, judgment, and trust. The goal is simple: tell your agent who you want to meet, let agents coordinate, and then make the real human meeting happen.", "about": {"@type": "Person", "name": "Walter Wu", "url": "https://people.hirey.ai/p/walter-wu"}, "publisher": {"@type": "Organization", "name": "HiRey", "url": "https://hirey.ai"}}, {"@context": "https://schema.org", "@type": "WebPage", "url": "https://people.hirey.ai/p/walter-wu", "name": "Walter Wu — HiRey People", "description": "Walter Wu explains the HiRey thesis from the Launch Map stage: agents can do the workflow around finding people, follow-up, and scheduling, while trusted humans keep judgment, vouching, and high-stakes introductions.", "isPartOf": {"@type": "WebSite", "name": "HiRey People", "url": "https://people.hirey.ai"}, "about": {"@type": "Person", "name": "Walter Wu"}}]</script>
 <style>
-:root { color-scheme: light; --ink:#171412; --muted:rgba(23,20,18,.62); --line:rgba(23,20,18,.14); --paper:#fbfaf7; --soft:#f0eee8; }
+:root {
+  color-scheme: light;
+  --ink:#161412;
+  --ink-soft:rgba(22,20,18,.62);
+  --ink-faint:rgba(22,20,18,.42);
+  --gold:#d18a00;
+  --blue:#2467e8;
+  --green:#34c759;
+  --purple:#7c4dff;
+  --paper:rgba(255,255,255,.86);
+  --paper-solid:#fbfaf7;
+  --line:rgba(22,20,18,.10);
+  --shadow:0 18px 48px rgba(20,18,16,.18);
+  --shadow-sm:0 8px 22px rgba(20,18,16,.12);
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman",serif;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;
+}
 * { box-sizing: border-box; }
-body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: var(--ink); background: var(--paper); }
+html, body { margin:0; min-height:100%; }
+body {
+  font-family:var(--sans);
+  color:var(--ink);
+  background:#dfe7ec;
+  -webkit-font-smoothing:antialiased;
+}
 a { color: inherit; }
-.top { min-height: 58px; display:flex; align-items:center; justify-content:space-between; gap:18px; padding:0 28px; border-bottom:1px solid var(--line); font-size:13px; }
-.top a { font-weight:800; text-decoration:none; }
-.top span { color:var(--muted); }
-main { max-width: 1040px; margin: 0 auto; padding: 34px 24px 54px; }
-.hero { display:grid; grid-template-columns: minmax(0, .92fr) minmax(320px, .88fr); gap: 38px; align-items:center; padding: 28px 0 34px; }
-.hero.index { grid-template-columns: 1fr; max-width: 760px; }
-.eyebrow { margin:0 0 10px; font-size:12px; text-transform:uppercase; letter-spacing:.11em; color:var(--muted); font-weight:800; }
-h1 { font-family: "Iowan Old Style", Palatino, Georgia, serif; font-size: clamp(34px, 6vw, 64px); line-height:.96; margin:0 0 16px; letter-spacing:0; }
-.headline { font-size:20px; line-height:1.35; margin:0 0 14px; }
-.summary { color:var(--muted); line-height:1.65; font-size:15.5px; }
-.actions { display:flex; gap:10px; flex-wrap:wrap; margin-top:22px; }
-.primary,.secondary { min-height:40px; display:inline-flex; align-items:center; padding:0 15px; border-radius:7px; text-decoration:none; font-weight:800; font-size:14px; }
-.primary { background:var(--ink); color:#fff; }
-.secondary { border:1px solid var(--line); }
+.glass {
+  background:var(--paper);
+  backdrop-filter:blur(16px);
+  border:1px solid var(--line);
+  box-shadow:var(--shadow);
+}
+.graph-field {
+  position:fixed;
+  inset:0;
+  overflow:hidden;
+  z-index:0;
+  background:
+    radial-gradient(circle at 62% 35%, rgba(36,103,232,.16), transparent 24%),
+    radial-gradient(circle at 42% 60%, rgba(209,138,0,.10), transparent 26%),
+    linear-gradient(180deg,#edf3f6 0%, #dbe5eb 58%, #d7e1e8 100%);
+}
+.graph-field::before {
+  content:"";
+  position:absolute;
+  inset:-12%;
+  background-image:
+    linear-gradient(rgba(22,20,18,.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(22,20,18,.045) 1px, transparent 1px);
+  background-size:48px 48px;
+  transform:rotate(-9deg) scale(1.08);
+  opacity:.46;
+}
+.graph-field::after {
+  content:"";
+  position:absolute;
+  left:34%;
+  top:12%;
+  width:42vw;
+  height:58vh;
+  border:1px solid rgba(22,20,18,.10);
+  border-radius:50%;
+  transform:rotate(-18deg);
+  box-shadow:0 0 0 52px rgba(255,255,255,.10), 0 0 0 118px rgba(255,255,255,.07);
+}
+.node {
+  position:absolute;
+  left:var(--x,50%);
+  top:var(--y,50%);
+  transform:translate(-50%,-50%);
+  z-index:1;
+}
+.person-node {
+  display:grid;
+  place-items:center;
+  gap:5px;
+  text-decoration:none;
+  color:var(--ink);
+}
+.person-node::before {
+  content:"";
+  position:absolute;
+  inset:-18px;
+  border-radius:50%;
+  border:1.5px solid var(--gold);
+  opacity:.32;
+  animation:ripple 3.8s ease-out infinite;
+}
+.person-node span:last-child {
+  max-width:160px;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  padding:3px 9px;
+  border:1px solid var(--line);
+  border-radius:999px;
+  background:rgba(255,255,255,.78);
+  box-shadow:var(--shadow-sm);
+  font-size:11px;
+  font-weight:750;
+}
+.ghost {
+  width:12px;
+  height:12px;
+  border-radius:50%;
+  background:radial-gradient(circle at 35% 30%, #a9c6ff, var(--blue));
+  box-shadow:0 0 0 1.5px rgba(255,255,255,.6), 0 0 12px rgba(36,103,232,.44);
+  animation:breath 5.5s ease-in-out infinite;
+}
+.ghost.n1 { --x:66%; --y:24%; background:radial-gradient(circle at 35% 30%, #ffd98a, var(--gold)); }
+.ghost.n2 { --x:58%; --y:43%; background:radial-gradient(circle at 35% 30%, #9ef0b4, var(--green)); animation-delay:-1.2s; }
+.ghost.n3 { --x:73%; --y:56%; background:radial-gradient(circle at 35% 30%, #cdb4ff, var(--purple)); animation-delay:-2.1s; }
+.ghost.n4 { --x:49%; --y:29%; animation-delay:-3.4s; }
+@keyframes breath { 0%,100%{ opacity:.48; transform:translate(-50%,-50%) scale(1); } 50%{ opacity:.82; transform:translate(-50%,-50%) scale(1.22); } }
+@keyframes ripple { 0%{ transform:scale(.78); opacity:.36; } 100%{ transform:scale(1.55); opacity:0; } }
+.brand {
+  position:fixed;
+  top:20px;
+  left:20px;
+  z-index:4;
+  width:min(420px, calc(100vw - 40px));
+  border-radius:18px;
+  padding:16px 20px;
+}
+.kicker {
+  display:inline-flex;
+  align-items:center;
+  gap:7px;
+  text-decoration:none;
+  font-size:11px;
+  font-weight:800;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:var(--ink-soft);
+}
+.live-dot {
+  width:8px;
+  height:8px;
+  border-radius:50%;
+  background:var(--green);
+  box-shadow:0 0 0 4px rgba(52,199,89,.20);
+  animation:livedot 2s ease-in-out infinite;
+}
+@keyframes livedot { 0%,100%{ box-shadow:0 0 0 3px rgba(52,199,89,.22); } 50%{ box-shadow:0 0 0 7px rgba(52,199,89,.08); } }
+.brand h1 {
+  font-family:var(--serif);
+  font-weight:600;
+  font-size:clamp(28px, 4vw, 42px);
+  line-height:1;
+  margin:8px 0 7px;
+  letter-spacing:0;
+}
+.brand p {
+  margin:0;
+  color:var(--ink-soft);
+  font-size:13px;
+  line-height:1.45;
+}
+.stats {
+  display:flex;
+  flex-wrap:wrap;
+  gap:16px;
+  margin-top:12px;
+  padding-top:11px;
+  border-top:1px solid var(--line);
+}
+.stats b {
+  display:block;
+  font-size:17px;
+  line-height:1.1;
+  font-weight:850;
+  font-variant-numeric:tabular-nums;
+}
+.stats em {
+  display:block;
+  margin-top:3px;
+  color:var(--ink-faint);
+  font-style:normal;
+  font-size:10.5px;
+  font-weight:750;
+  letter-spacing:.03em;
+  text-transform:uppercase;
+}
+.search {
+  position:fixed;
+  top:20px;
+  left:50%;
+  transform:translateX(-50%);
+  z-index:5;
+  width:min(360px, calc(100vw - 48px));
+  min-height:38px;
+  border-radius:999px;
+  padding:0 14px;
+  display:flex;
+  align-items:center;
+  gap:9px;
+}
+.search span { color:var(--ink-faint); font-size:18px; line-height:1; }
+.search input {
+  border:0;
+  outline:0;
+  background:transparent;
+  width:100%;
+  min-width:0;
+  font:inherit;
+  color:var(--ink);
+}
+.search input::placeholder { color:var(--ink-faint); }
+.lens {
+  position:fixed;
+  top:20px;
+  right:20px;
+  z-index:5;
+  display:flex;
+  gap:3px;
+  border-radius:999px;
+  padding:5px;
+}
+.lens a {
+  min-height:30px;
+  padding:7px 12px;
+  border-radius:999px;
+  display:inline-flex;
+  align-items:center;
+  text-decoration:none;
+  color:var(--ink-soft);
+  font-size:12.5px;
+  font-weight:700;
+}
+.lens a.on { background:var(--ink); color:#fff; }
+.brief {
+  position:fixed;
+  right:20px;
+  top:74px;
+  z-index:4;
+  width:min(300px, calc(100vw - 40px));
+  border-radius:18px;
+  padding:15px 17px;
+}
+.mini {
+  display:flex;
+  justify-content:space-between;
+  gap:12px;
+  margin-bottom:5px;
+  color:var(--ink-faint);
+  font-size:10px;
+  font-weight:800;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+.brief h2 {
+  font-family:var(--serif);
+  font-size:22px;
+  line-height:1;
+  margin:0 0 8px;
+  letter-spacing:0;
+  text-transform:none;
+}
+.brief p {
+  margin:0;
+  color:var(--ink-soft);
+  font-size:13px;
+  line-height:1.5;
+}
+.gold { color:var(--gold); }
+.blue { color:var(--blue); }
+.green { color:#1d7c3e; }
+.stage {
+  position:relative;
+  z-index:2;
+  min-height:100vh;
+  display:grid;
+  place-items:end center;
+  padding:240px 20px 28px;
+}
+.spotlight {
+  width:min(680px, calc(100vw - 40px));
+  border-radius:18px;
+  padding:18px;
+}
+.index-spotlight {
+  max-height:min(52vh, 460px);
+  overflow:auto;
+}
+.spotlight > .eyebrow,
+.profile-head .eyebrow {
+  margin:0 0 8px;
+  color:var(--blue);
+  font-size:11px;
+  font-weight:850;
+  letter-spacing:.10em;
+  text-transform:uppercase;
+}
+.spotlight h2 {
+  margin:0 0 12px;
+  font-family:var(--serif);
+  font-weight:600;
+  font-size:clamp(26px, 4vw, 36px);
+  line-height:1;
+  letter-spacing:0;
+  text-transform:none;
+}
+.grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
+  gap:10px;
+}
+.card[hidden] { display:none; }
+.card a {
+  min-height:142px;
+  padding:15px;
+  display:grid;
+  grid-template-columns:auto 1fr;
+  grid-template-rows:auto auto 1fr;
+  gap:4px 12px;
+  border:1px solid var(--line);
+  border-radius:10px;
+  background:rgba(255,255,255,.56);
+  text-decoration:none;
+  transition:transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+.card a:hover {
+  transform:translateY(-2px);
+  border-color:rgba(209,138,0,.42);
+  box-shadow:var(--shadow-sm);
+}
+.card .avatar { grid-row:1 / span 3; }
+.card span:not(.avatar) {
+  display:block;
+  color:var(--ink-faint);
+  font-size:10px;
+  text-transform:uppercase;
+  letter-spacing:.08em;
+  font-weight:850;
+}
+.card strong {
+  display:block;
+  min-width:0;
+  font-size:22px;
+  line-height:1.05;
+}
+.card em {
+  min-width:0;
+  color:var(--ink-soft);
+  font-style:normal;
+  line-height:1.35;
+  font-size:13px;
+}
+.avatar {
+  width:38px;
+  height:38px;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  overflow:hidden;
+  color:#fff;
+  background:linear-gradient(135deg, var(--ink), #5d4a22);
+  border:2px solid rgba(209,138,0,.60);
+  box-shadow:0 0 0 3px rgba(255,255,255,.82), var(--shadow-sm);
+  font-size:12px;
+  font-weight:850;
+}
+.avatar img { width:100%; height:100%; object-fit:cover; }
+.avatar.large {
+  width:58px;
+  height:58px;
+  font-size:17px;
+  flex:none;
+}
+.avatar.nodeface {
+  width:42px;
+  height:42px;
+  font-size:13px;
+}
+.profile-head {
+  display:flex;
+  gap:14px;
+  align-items:flex-start;
+  margin-bottom:14px;
+}
+.profile-head h2 { margin-bottom:6px; }
+.profile-head p:last-child {
+  margin:0;
+  color:var(--ink-soft);
+  font-size:14px;
+  line-height:1.5;
+}
 .media { width:100%; }
-video, iframe, .video { width:100%; aspect-ratio:16/9; border:1px solid var(--line); border-radius:8px; background:#161412; display:block; }
-.video.pending { background:var(--soft); color:var(--muted); display:grid; place-items:center; padding:24px; text-align:center; }
-.band { border-top:1px solid var(--line); padding:30px 0 8px; max-width:760px; }
-.band.compact { padding-bottom: 28px; }
-h2 { font-size:13px; text-transform:uppercase; letter-spacing:.11em; margin:0 0 14px; }
-.band p { font-size:15.5px; line-height:1.72; color:rgba(23,20,18,.82); }
-.links { display:flex; gap:12px; flex-wrap:wrap; }
-.grid { display:grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap:12px; border-top:1px solid var(--line); padding-top:26px; }
-.card a { display:block; min-height:150px; padding:18px; border:1px solid var(--line); border-radius:8px; text-decoration:none; background:rgba(255,255,255,.45); }
-.card span { display:block; color:var(--muted); font-size:12px; text-transform:uppercase; letter-spacing:.08em; font-weight:800; }
-.card strong { display:block; font-size:23px; line-height:1.1; margin:18px 0 10px; }
-.card em { color:var(--muted); font-style:normal; line-height:1.45; font-size:14px; }
-footer { border-top:1px solid var(--line); color:var(--muted); padding:18px 28px 34px; font-size:12.5px; line-height:1.7; }
+video, iframe, .video {
+  width:100%;
+  aspect-ratio:16/9;
+  display:block;
+  border:1px solid var(--line);
+  border-radius:10px;
+  background:#161412;
+}
+.video.pending {
+  display:grid;
+  place-items:center;
+  padding:24px;
+  text-align:center;
+  background:rgba(255,255,255,.55);
+  color:var(--ink-soft);
+}
+.actions {
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-top:14px;
+}
+.primary,.secondary {
+  min-height:38px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:0 15px;
+  border-radius:999px;
+  text-decoration:none;
+  font-size:13px;
+  font-weight:850;
+}
+.primary { background:var(--ink); color:#fff; }
+.secondary { background:rgba(255,255,255,.52); border:1px solid var(--line); }
+.content-band {
+  position:relative;
+  z-index:3;
+  background:var(--paper-solid);
+  border-top:1px solid var(--line);
+}
+.content-wrap {
+  width:min(900px, calc(100vw - 40px));
+  margin:0 auto;
+  padding:42px 0 48px;
+}
+.band {
+  max-width:760px;
+  padding:0 0 28px;
+}
+.band + .band {
+  padding-top:26px;
+  border-top:1px solid var(--line);
+}
+.band h2 {
+  margin:0 0 14px;
+  color:var(--ink);
+  font-size:12px;
+  text-transform:uppercase;
+  letter-spacing:.11em;
+}
+.band p {
+  margin:0 0 13px;
+  color:rgba(22,20,18,.80);
+  font-size:15.5px;
+  line-height:1.72;
+}
+.links {
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+}
+.footer {
+  position:fixed;
+  left:20px;
+  bottom:20px;
+  z-index:5;
+  display:flex;
+  gap:10px;
+  align-items:center;
+  flex-wrap:wrap;
+  color:var(--ink-soft);
+  font-size:12px;
+}
+.person-page .footer {
+  position:relative;
+  left:auto;
+  bottom:auto;
+  z-index:3;
+  padding:18px 28px 30px;
+  background:var(--paper-solid);
+  border-top:1px solid var(--line);
+}
+.footer a {
+  padding:8px 12px;
+  border-radius:999px;
+  background:var(--paper);
+  border:1px solid var(--line);
+  box-shadow:var(--shadow-sm);
+  text-decoration:none;
+  font-weight:700;
+}
 @media (max-width: 760px) {
-  .top { align-items:flex-start; flex-direction:column; padding:16px 20px; gap:4px; }
-  main { padding:24px 18px 42px; }
-  .hero { grid-template-columns:1fr; gap:24px; }
-  h1 { font-size:40px; }
-  .headline { font-size:18px; }
+  body { background:#dfe7ec; }
+  .graph-field { min-height:720px; }
+  .brand, .search, .lens, .brief, .footer {
+    position:relative;
+    inset:auto;
+    transform:none;
+    width:calc(100vw - 32px);
+    margin:14px 16px 0;
+  }
+  .brand { padding:15px 16px; }
+  .brand h1 { font-size:34px; }
+  .lens { justify-content:space-between; }
+  .lens a { flex:1; justify-content:center; }
+  .brief { top:auto; }
+  .stage {
+    min-height:auto;
+    place-items:start center;
+    padding:16px 16px 28px;
+  }
+  .spotlight {
+    width:100%;
+    border-radius:16px;
+  }
+  .index-spotlight {
+    max-height:none;
+  }
+  .grid { grid-template-columns:1fr; }
+  .person-node span:last-child { display:none; }
+  .profile-head { flex-direction:column; }
+  .content-wrap { width:calc(100vw - 32px); padding-top:28px; }
+  .footer {
+    padding-bottom:20px;
+  }
 }
 </style>
 </head>
-<body>
-<header class="top"><a href="https://people.hirey.ai/">HiRey People</a><span>Consented, video-backed people pages for agents and humans</span></header>
-<main>
-  <section class="hero">
-    <div>
-      <p class="eyebrow">Introducer · San Francisco</p>
-      <h1>Walter Wu</h1>
-      <p class="headline">Founder of HiRey, building an agent-amplified trusted introducer network</p>
-      <p class="summary">Walter Wu explains the HiRey thesis from the Launch Map stage: agents can do the workflow around finding people, follow-up, and scheduling, while trusted humans keep judgment, vouching, and high-stakes introductions.</p>
-      <div class="actions">
-        <a class="primary" href="https://hi.hirey.ai/owner/212">Open Hi profile</a>
-        <a class="secondary" href="https://people.hirey.ai/data/people.json">Agent-readable data</a>
+<body class="person-page">
+<div class="graph-field" aria-hidden="true"><a class="node person-node active role-introducer" href="https://people.hirey.ai/p/walter-wu" style="--x:53.8%;--y:28.3%;"><span class="avatar nodeface role-introducer">WW</span><span>Walter Wu</span></a>
+<span class="node ghost n1"></span>
+<span class="node ghost n2"></span>
+<span class="node ghost n3"></span>
+<span class="node ghost n4"></span></div>
+<header class="brand glass">
+  <a class="kicker" href="https://people.hirey.ai/"><span class="live-dot"></span> HIREY · PEOPLE SIGNALS</a>
+  <h1>Walter Wu</h1>
+  <p>Founder of HiRey, building an agent-amplified trusted introducer network</p>
+  <div class="stats">
+    <span><b>Introducer</b><em>Role</em></span>
+    <span><b>San Francisco</b><em>Location</em></span>
+    <span><b>1</b><em>Video</em></span>
+  </div>
+</header>
+<nav class="lens glass" aria-label="People graph controls">
+  <a class="on" href="https://people.hirey.ai/p/walter-wu">Profile</a>
+  <a href="#transcript">Transcript</a>
+  <a href="https://people.hirey.ai/data/people.json">JSON</a>
+</nav>
+<aside class="brief glass">
+  <div class="mini"><span>Verified surface</span><span>canonical</span></div>
+  <h2>What is trusted</h2>
+  <p><b class="gold">Consent confirmed</b> · first-party video · transcript · structured Person and VideoObject data. Hi owns the relationship layer.</p>
+</aside>
+<main class="stage">
+  <article class="spotlight glass person-spotlight">
+    <div class="profile-head">
+      <span class="avatar large role-introducer">WW</span>
+      <div>
+        <p class="eyebrow">Introducer · San Francisco</p>
+        <h2>Walter Wu</h2>
+        <p>Walter Wu explains the HiRey thesis from the Launch Map stage: agents can do the workflow around finding people, follow-up, and scheduling, while trusted humans keep judgment, vouching, and high-stakes introductions.</p>
       </div>
     </div>
-    <div class="media"><video controls preload="metadata"><source src="https://people.hirey.ai/assets/video/walter-wu-hirey-stage-pitch-0255-720p.mp4" /></video></div>
-  </section>
-  <section class="band">
-    <h2>Transcript</h2>
-    <p>Everyone on earth should be connected by their agents. The co-founder, the hire, the mentor, the person you need is already out there, but the tools we use today were built for attention and known contacts, not for trusted strangers to meet. HiRey is a network for humans with agents: agents handle finding, follow-up, and scheduling, while humans keep the relationship, judgment, and trust. The goal is simple: tell your agent who you want to meet, let agents coordinate, and then make the real human meeting happen.</p>
-  </section>
-  <section class="band compact">
-    <h2>Canonical Links</h2>
-    <p>This is the canonical HiRey people page for Walter Wu. External platforms should link back here.</p>
-    <p><a href="https://hi.hirey.ai/owner/212">Hi profile</a></p>
-    
-  </section>
+    <div class="media"><video controls preload="metadata"><source src="/assets/video/walter-wu-hirey-stage-pitch-0255-720p.mp4" /></video></div>
+    <div class="actions">
+      <a class="primary" href="https://hi.hirey.ai/owner/212">Open Hi profile</a>
+      <a class="secondary" href="#transcript">Read transcript</a>
+    </div>
+  </article>
 </main>
-<footer>Canonical URL: https://people.hirey.ai/p/walter-wu · Public only after consent · Built by <a href="https://hirey.ai">HiRey</a></footer>
+<section class="content-band" id="transcript">
+  <div class="content-wrap">
+    <section class="band">
+      <h2>Transcript</h2>
+      <p>Everyone on earth should be connected by their agents. The co-founder, the hire, the mentor, the person you need is already out there, but the tools we use today were built for attention and known contacts, not for trusted strangers to meet. HiRey is a network for humans with agents: agents handle finding, follow-up, and scheduling, while humans keep the relationship, judgment, and trust. The goal is simple: tell your agent who you want to meet, let agents coordinate, and then make the real human meeting happen.</p>
+    </section>
+    <section class="band compact">
+      <h2>Canonical Links</h2>
+      <p>This is the canonical HiRey people page for Walter Wu. External platforms should link back here.</p>
+      <p><a href="https://hi.hirey.ai/owner/212">Hi profile</a> · <a href="https://people.hirey.ai/p/walter-wu">Canonical URL</a></p>
+
+    </section>
+  </div>
+</section>
+<footer class="footer"><a href="https://people.hirey.ai/llms.txt">llms.txt</a> · <a href="https://people.hirey.ai/data/people.json">people.json</a> · <a href="https://people.hirey.ai/sitemap.xml">sitemap</a> · Built by <a href="https://hirey.ai">HiRey</a></footer>
 </body>
 </html>
