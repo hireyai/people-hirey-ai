@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-17T18:56:06.924883+00:00",
+  "generated_at": "2026-06-17T19:16:51.354234+00:00",
   "policy": "Public, consented, video-backed people records only. No private contact fields.",
   "people": [
     {
@@ -15,6 +15,30 @@
       "hi_owner_url": "https://hi.hirey.ai/owner/212",
       "video_url": "https://people.hirey.ai/assets/video/walter-wu-hirey-stage-pitch-0255-720p.mp4",
       "thumbnail_url": "https://people.hirey.ai/assets/image/walter-wu-hirey-stage-pitch-0255-poster.jpg",
+      "upload_date": "2026-06-17",
+      "external_urls": {}
+    },
+    {
+      "video_id": "zubair-zafar-sf-builder-0266",
+      "person_name": "Zubair Zafar",
+      "person_slug": "zubair-zafar",
+      "role": "candidate",
+      "headline": "Full-stack engineer and AI builder looking for an autonomous product role in San Francisco",
+      "location_text": "San Francisco",
+      "summary": "Zubair Zafar talks about coming from Pakistan to the U.S., earning a full-ride Master's in Computer Science at Eastern Illinois University, building multi-agent real-estate workflows, doing MRI computer-vision research, and moving to San Francisco to join a meaningful builder community.",
+      "canonical_url": "https://people.hirey.ai/p/zubair-zafar",
+      "video_url": "https://people.hirey.ai/assets/video/zubair-zafar-sf-builder-0266-720p.mp4",
+      "thumbnail_url": "https://people.hirey.ai/assets/image/zubair-zafar-sf-builder-0266-poster.jpg",
+      "extra_videos": [
+        {
+          "video_id": "zubair-zafar-cloudflare-plasma-wall-0267",
+          "title": "Cloudflare plasma wall explainer",
+          "description": "Zubair explains the plasma wall outside Cloudflare's office and how physical randomness can be used as a source for encryption.",
+          "video_url": "https://people.hirey.ai/assets/video/zubair-zafar-cloudflare-plasma-wall-0267-720p.mp4",
+          "thumbnail_url": "https://people.hirey.ai/assets/image/zubair-zafar-cloudflare-plasma-wall-0267-poster.jpg",
+          "upload_date": "2026-06-17"
+        }
+      ],
       "upload_date": "2026-06-17",
       "external_urls": {}
     }
