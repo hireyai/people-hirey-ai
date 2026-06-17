@@ -17,132 +17,52 @@
   --gold:#d18a00;
   --blue:#2467e8;
   --green:#34c759;
-  --purple:#7c4dff;
-  --paper:rgba(255,255,255,.86);
-  --paper-solid:#fbfaf7;
+  --paper:#fbfaf7;
   --line:rgba(22,20,18,.10);
-  --shadow:0 18px 48px rgba(20,18,16,.18);
   --shadow-sm:0 8px 22px rgba(20,18,16,.12);
   --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman",serif;
   --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;
 }
-* { box-sizing: border-box; }
+* { box-sizing:border-box; }
 html, body { margin:0; min-height:100%; }
 body {
+  min-height:100vh;
   font-family:var(--sans);
   color:var(--ink);
-  background:#dfe7ec;
+  background:linear-gradient(180deg, #f7f7f2 0%, #eef3f6 44%, #f7f7f2 100%);
   -webkit-font-smoothing:antialiased;
 }
-a { color: inherit; }
-.glass {
-  background:var(--paper);
-  backdrop-filter:blur(16px);
-  border:1px solid var(--line);
-  box-shadow:var(--shadow);
-}
-.graph-field {
+body::before {
+  content:"";
   position:fixed;
   inset:0;
-  overflow:hidden;
-  z-index:0;
-  background:
-    radial-gradient(circle at 62% 35%, rgba(36,103,232,.16), transparent 24%),
-    radial-gradient(circle at 42% 60%, rgba(209,138,0,.10), transparent 26%),
-    linear-gradient(180deg,#edf3f6 0%, #dbe5eb 58%, #d7e1e8 100%);
+  pointer-events:none;
+  background-image:linear-gradient(rgba(22,20,18,.045) 1px, transparent 1px);
+  background-size:100% 44px;
+  opacity:.55;
 }
-.graph-field::before {
-  content:"";
-  position:absolute;
-  inset:-12%;
-  background-image:
-    linear-gradient(rgba(22,20,18,.045) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(22,20,18,.045) 1px, transparent 1px);
-  background-size:48px 48px;
-  transform:rotate(-9deg) scale(1.08);
-  opacity:.46;
+a { color:inherit; }
+.topbar {
+  position:sticky;
+  top:0;
+  z-index:20;
+  min-height:62px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:18px;
+  padding:0 28px;
+  background:rgba(251,250,247,.88);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--line);
 }
-.graph-field::after {
-  content:"";
-  position:absolute;
-  left:34%;
-  top:12%;
-  width:42vw;
-  height:58vh;
-  border:1px solid rgba(22,20,18,.10);
-  border-radius:50%;
-  transform:rotate(-18deg);
-  box-shadow:0 0 0 52px rgba(255,255,255,.10), 0 0 0 118px rgba(255,255,255,.07);
-}
-.node {
-  position:absolute;
-  left:var(--x,50%);
-  top:var(--y,50%);
-  transform:translate(-50%,-50%);
-  z-index:1;
-}
-.person-node {
-  display:grid;
-  place-items:center;
-  gap:5px;
-  text-decoration:none;
-  color:var(--ink);
-}
-.person-node::before {
-  content:"";
-  position:absolute;
-  inset:-18px;
-  border-radius:50%;
-  border:1.5px solid var(--gold);
-  opacity:.32;
-  animation:ripple 3.8s ease-out infinite;
-}
-.person-node span:last-child {
-  max-width:160px;
-  white-space:nowrap;
-  overflow:hidden;
-  text-overflow:ellipsis;
-  padding:3px 9px;
-  border:1px solid var(--line);
-  border-radius:999px;
-  background:rgba(255,255,255,.78);
-  box-shadow:var(--shadow-sm);
-  font-size:11px;
-  font-weight:750;
-}
-.ghost {
-  width:12px;
-  height:12px;
-  border-radius:50%;
-  background:radial-gradient(circle at 35% 30%, #a9c6ff, var(--blue));
-  box-shadow:0 0 0 1.5px rgba(255,255,255,.6), 0 0 12px rgba(36,103,232,.44);
-  animation:breath 5.5s ease-in-out infinite;
-}
-.ghost.n1 { --x:66%; --y:24%; background:radial-gradient(circle at 35% 30%, #ffd98a, var(--gold)); }
-.ghost.n2 { --x:58%; --y:43%; background:radial-gradient(circle at 35% 30%, #9ef0b4, var(--green)); animation-delay:-1.2s; }
-.ghost.n3 { --x:73%; --y:56%; background:radial-gradient(circle at 35% 30%, #cdb4ff, var(--purple)); animation-delay:-2.1s; }
-.ghost.n4 { --x:49%; --y:29%; animation-delay:-3.4s; }
-@keyframes breath { 0%,100%{ opacity:.48; transform:translate(-50%,-50%) scale(1); } 50%{ opacity:.82; transform:translate(-50%,-50%) scale(1.22); } }
-@keyframes ripple { 0%{ transform:scale(.78); opacity:.36; } 100%{ transform:scale(1.55); opacity:0; } }
-.brand {
-  position:fixed;
-  top:20px;
-  left:20px;
-  z-index:4;
-  width:min(420px, calc(100vw - 40px));
-  border-radius:18px;
-  padding:16px 20px;
-}
-.kicker {
+.brandmark {
   display:inline-flex;
   align-items:center;
-  gap:7px;
+  gap:8px;
+  font-size:13px;
+  font-weight:850;
   text-decoration:none;
-  font-size:11px;
-  font-weight:800;
-  letter-spacing:.08em;
-  text-transform:uppercase;
-  color:var(--ink-soft);
 }
 .live-dot {
   width:8px;
@@ -152,149 +72,152 @@ a { color: inherit; }
   box-shadow:0 0 0 4px rgba(52,199,89,.20);
   animation:livedot 2s ease-in-out infinite;
 }
-@keyframes livedot { 0%,100%{ box-shadow:0 0 0 3px rgba(52,199,89,.22); } 50%{ box-shadow:0 0 0 7px rgba(52,199,89,.08); } }
-.brand h1 {
-  font-family:var(--serif);
-  font-weight:600;
-  font-size:clamp(28px, 4vw, 42px);
-  line-height:1;
-  margin:8px 0 7px;
-  letter-spacing:0;
+@keyframes livedot {
+  0%,100% { box-shadow:0 0 0 3px rgba(52,199,89,.22); }
+  50% { box-shadow:0 0 0 7px rgba(52,199,89,.08); }
 }
-.brand p {
-  margin:0;
-  color:var(--ink-soft);
-  font-size:13px;
-  line-height:1.45;
-}
-.stats {
-  display:flex;
-  flex-wrap:wrap;
-  gap:16px;
-  margin-top:12px;
-  padding-top:11px;
-  border-top:1px solid var(--line);
-}
-.stats b {
-  display:block;
-  font-size:17px;
-  line-height:1.1;
-  font-weight:850;
-  font-variant-numeric:tabular-nums;
-}
-.stats em {
-  display:block;
-  margin-top:3px;
-  color:var(--ink-faint);
-  font-style:normal;
-  font-size:10.5px;
-  font-weight:750;
-  letter-spacing:.03em;
-  text-transform:uppercase;
-}
-.search {
-  position:fixed;
-  top:20px;
-  left:50%;
-  transform:translateX(-50%);
-  z-index:5;
-  width:min(360px, calc(100vw - 48px));
-  min-height:38px;
-  border-radius:999px;
-  padding:0 14px;
+.topnav {
   display:flex;
   align-items:center;
-  gap:9px;
-}
-.search span { color:var(--ink-faint); font-size:18px; line-height:1; }
-.search input {
-  border:0;
-  outline:0;
-  background:transparent;
-  width:100%;
-  min-width:0;
-  font:inherit;
-  color:var(--ink);
-}
-.search input::placeholder { color:var(--ink-faint); }
-.lens {
-  position:fixed;
-  top:20px;
-  right:20px;
-  z-index:5;
-  display:flex;
-  gap:3px;
+  gap:4px;
+  padding:4px;
+  border:1px solid var(--line);
   border-radius:999px;
-  padding:5px;
+  background:rgba(255,255,255,.72);
 }
-.lens a {
+.topnav a {
   min-height:30px;
-  padding:7px 12px;
-  border-radius:999px;
   display:inline-flex;
   align-items:center;
-  text-decoration:none;
+  padding:0 12px;
+  border-radius:999px;
   color:var(--ink-soft);
   font-size:12.5px;
-  font-weight:700;
+  font-weight:750;
+  text-decoration:none;
 }
-.lens a.on { background:var(--ink); color:#fff; }
-.brief {
-  position:fixed;
-  right:20px;
-  top:74px;
-  z-index:4;
-  width:min(300px, calc(100vw - 40px));
-  border-radius:18px;
-  padding:15px 17px;
+.topnav a.on { color:#fff; background:var(--ink); }
+.layout {
+  position:relative;
+  z-index:1;
+  width:min(1180px, calc(100vw - 40px));
+  margin:0 auto;
+  padding:34px 0 60px;
+  display:grid;
+  grid-template-columns:minmax(0, 1fr) 310px;
+  gap:28px;
+  align-items:start;
 }
-.mini {
+.feed-hero,
+.profile-detail,
+.rail-card,
+.feed-toolbar,
+.feed-card {
+  border:1px solid var(--line);
+  background:rgba(255,255,255,.78);
+  box-shadow:var(--shadow-sm);
+  border-radius:8px;
+}
+.feed-hero { padding:26px 28px; }
+.feed-hero h1 {
+  max-width:720px;
+  margin:6px 0 10px;
+  font-family:var(--serif);
+  font-size:clamp(38px, 6vw, 68px);
+  line-height:.96;
+  font-weight:600;
+  letter-spacing:0;
+}
+.feed-hero p:last-child {
+  max-width:760px;
+  margin:0;
+  color:var(--ink-soft);
+  font-size:17px;
+  line-height:1.5;
+}
+.feed-toolbar {
+  margin-top:12px;
+  padding:10px;
   display:flex;
-  justify-content:space-between;
+  align-items:center;
   gap:12px;
-  margin-bottom:5px;
+}
+.search {
+  min-height:42px;
+  flex:1;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding:0 12px;
+  border:1px solid var(--line);
+  border-radius:8px;
+  background:#fff;
+}
+.search span {
   color:var(--ink-faint);
-  font-size:10px;
-  font-weight:800;
+  font-size:11px;
+  font-weight:850;
   letter-spacing:.08em;
   text-transform:uppercase;
 }
-.brief h2 {
-  font-family:var(--serif);
-  font-size:22px;
-  line-height:1;
-  margin:0 0 8px;
-  letter-spacing:0;
-  text-transform:none;
+.search input {
+  border:0;
+  outline:0;
+  width:100%;
+  min-width:0;
+  background:transparent;
+  font:inherit;
 }
-.brief p {
-  margin:0;
+.pills { display:flex; gap:6px; flex-wrap:wrap; }
+.pill {
+  min-height:32px;
+  display:inline-flex;
+  align-items:center;
+  padding:0 11px;
+  border:1px solid var(--line);
+  border-radius:999px;
   color:var(--ink-soft);
-  font-size:13px;
-  line-height:1.5;
+  background:rgba(255,255,255,.68);
+  font-size:12px;
+  font-weight:800;
 }
-.gold { color:var(--gold); }
-.blue { color:var(--blue); }
-.green { color:#1d7c3e; }
-.stage {
-  position:relative;
-  z-index:2;
-  min-height:100vh;
+.pill.on { color:#fff; border-color:var(--ink); background:var(--ink); }
+.feed-list {
   display:grid;
-  place-items:end center;
-  padding:240px 20px 28px;
+  gap:14px;
+  margin-top:16px;
 }
-.spotlight {
-  width:min(680px, calc(100vw - 40px));
-  border-radius:18px;
-  padding:18px;
+.feed-card {
+  min-height:236px;
+  display:grid;
+  grid-template-columns:260px minmax(0, 1fr);
+  overflow:hidden;
 }
-.index-spotlight {
-  max-height:min(52vh, 460px);
-  overflow:auto;
+.feed-card[hidden] { display:none; }
+.feed-media {
+  display:block;
+  min-height:100%;
+  background:#171412;
+  border-right:1px solid var(--line);
+  text-decoration:none;
 }
-.spotlight > .eyebrow,
-.profile-head .eyebrow {
+.feed-media img {
+  width:100%;
+  height:100%;
+  min-height:236px;
+  object-fit:cover;
+  display:block;
+}
+.feed-media .avatar.poster {
+  width:100%;
+  height:100%;
+  min-height:236px;
+  border:0;
+  border-radius:0;
+  box-shadow:none;
+}
+.feed-body { padding:20px 22px; }
+.eyebrow {
   margin:0 0 8px;
   color:var(--blue);
   font-size:11px;
@@ -302,64 +225,142 @@ a { color: inherit; }
   letter-spacing:.10em;
   text-transform:uppercase;
 }
-.spotlight h2 {
-  margin:0 0 12px;
+.feed-body h2 {
+  margin:0 0 7px;
   font-family:var(--serif);
-  font-weight:600;
-  font-size:clamp(26px, 4vw, 36px);
+  font-size:34px;
   line-height:1;
   letter-spacing:0;
   text-transform:none;
 }
-.grid {
-  display:grid;
-  grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
-  gap:10px;
+.feed-body h2 a { text-decoration:none; }
+.headline {
+  margin:0 0 8px;
+  color:var(--ink);
+  font-size:16px;
+  line-height:1.35;
 }
-.card[hidden] { display:none; }
-.card a {
-  min-height:142px;
-  padding:15px;
-  display:grid;
-  grid-template-columns:auto 1fr;
-  grid-template-rows:auto auto 1fr;
-  gap:4px 12px;
-  border:1px solid var(--line);
-  border-radius:10px;
-  background:rgba(255,255,255,.56);
+.summary {
+  margin:0;
+  color:var(--ink-soft);
+  font-size:14.5px;
+  line-height:1.55;
+}
+.feed-actions,
+.actions {
+  display:flex;
+  gap:9px;
+  flex-wrap:wrap;
+  margin-top:16px;
+}
+.primary,
+.secondary {
+  min-height:36px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:0 13px;
+  border-radius:8px;
   text-decoration:none;
-  transition:transform .2s ease, box-shadow .2s ease, border-color .2s ease;
-}
-.card a:hover {
-  transform:translateY(-2px);
-  border-color:rgba(209,138,0,.42);
-  box-shadow:var(--shadow-sm);
-}
-.card .avatar { grid-row:1 / span 3; }
-.card span:not(.avatar) {
-  display:block;
-  color:var(--ink-faint);
-  font-size:10px;
-  text-transform:uppercase;
-  letter-spacing:.08em;
+  font-size:13px;
   font-weight:850;
 }
-.card strong {
-  display:block;
-  min-width:0;
-  font-size:22px;
-  line-height:1.05;
+.primary { background:var(--ink); color:#fff; }
+.secondary { background:#fff; border:1px solid var(--line); color:var(--ink); }
+.rail {
+  position:sticky;
+  top:82px;
+  display:grid;
+  gap:12px;
 }
-.card em {
-  min-width:0;
+.rail-card { padding:16px; }
+.rail-kicker {
+  margin:0 0 8px;
+  color:var(--ink-faint);
+  font-size:10px;
+  font-weight:850;
+  letter-spacing:.10em;
+  text-transform:uppercase;
+}
+.rail-card h2 {
+  margin:0 0 8px;
+  font-family:var(--serif);
+  font-size:24px;
+  line-height:1;
+  text-transform:none;
+  letter-spacing:0;
+}
+.rail-card p {
+  margin:0;
   color:var(--ink-soft);
+  font-size:13.5px;
+  line-height:1.55;
+}
+.metric-card {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:13px;
+}
+.metric-card b {
+  display:block;
+  font-size:20px;
+  line-height:1.1;
+  font-weight:850;
+}
+.metric-card em {
+  display:block;
+  margin-top:3px;
+  color:var(--ink-faint);
   font-style:normal;
-  line-height:1.35;
+  font-size:10px;
+  font-weight:850;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+.rail-links { display:grid; gap:8px; }
+.rail-links a {
+  min-height:34px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 11px;
+  border:1px solid var(--line);
+  border-radius:8px;
+  background:#fff;
+  text-decoration:none;
   font-size:13px;
+  font-weight:800;
+}
+.detail-layout {
+  grid-template-columns:minmax(0, 820px) 310px;
+  justify-content:center;
+}
+.profile-detail { padding:24px; }
+.backlink {
+  display:inline-flex;
+  margin-bottom:18px;
+  color:var(--ink-soft);
+  font-size:13px;
+  font-weight:800;
+  text-decoration:none;
+}
+.profile-head {
+  display:flex;
+  gap:15px;
+  align-items:flex-start;
+  margin-bottom:14px;
+}
+.profile-head h1 {
+  margin:3px 0 7px;
+  font-family:var(--serif);
+  font-size:clamp(42px, 7vw, 76px);
+  line-height:.92;
+  font-weight:600;
+  letter-spacing:0;
 }
 .avatar {
-  width:38px;
-  height:38px;
+  width:42px;
+  height:42px;
   border-radius:50%;
   display:grid;
   place-items:center;
@@ -373,36 +374,23 @@ a { color: inherit; }
 }
 .avatar img { width:100%; height:100%; object-fit:cover; }
 .avatar.large {
-  width:58px;
-  height:58px;
-  font-size:17px;
+  width:68px;
+  height:68px;
   flex:none;
+  font-size:18px;
 }
-.avatar.nodeface {
-  width:42px;
-  height:42px;
-  font-size:13px;
+.media {
+  width:100%;
+  margin-top:18px;
 }
-.profile-head {
-  display:flex;
-  gap:14px;
-  align-items:flex-start;
-  margin-bottom:14px;
-}
-.profile-head h2 { margin-bottom:6px; }
-.profile-head p:last-child {
-  margin:0;
-  color:var(--ink-soft);
-  font-size:14px;
-  line-height:1.5;
-}
-.media { width:100%; }
-video, iframe, .video {
+video,
+iframe,
+.video {
   width:100%;
   aspect-ratio:16/9;
   display:block;
   border:1px solid var(--line);
-  border-radius:10px;
+  border-radius:8px;
   background:#161412;
 }
 .video.pending {
@@ -410,45 +398,12 @@ video, iframe, .video {
   place-items:center;
   padding:24px;
   text-align:center;
-  background:rgba(255,255,255,.55);
+  background:#fff;
   color:var(--ink-soft);
 }
-.actions {
-  display:flex;
-  gap:10px;
-  flex-wrap:wrap;
-  margin-top:14px;
-}
-.primary,.secondary {
-  min-height:38px;
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  padding:0 15px;
-  border-radius:999px;
-  text-decoration:none;
-  font-size:13px;
-  font-weight:850;
-}
-.primary { background:var(--ink); color:#fff; }
-.secondary { background:rgba(255,255,255,.52); border:1px solid var(--line); }
-.content-band {
-  position:relative;
-  z-index:3;
-  background:var(--paper-solid);
-  border-top:1px solid var(--line);
-}
-.content-wrap {
-  width:min(900px, calc(100vw - 40px));
-  margin:0 auto;
-  padding:42px 0 48px;
-}
 .band {
-  max-width:760px;
-  padding:0 0 28px;
-}
-.band + .band {
-  padding-top:26px;
+  margin-top:28px;
+  padding-top:24px;
   border-top:1px solid var(--line);
 }
 .band h2 {
@@ -470,10 +425,11 @@ video, iframe, .video {
   flex-wrap:wrap;
 }
 .footer {
-  position:fixed;
-  left:20px;
-  bottom:20px;
-  z-index:5;
+  position:relative;
+  z-index:1;
+  width:min(1180px, calc(100vw - 40px));
+  margin:0 auto;
+  padding:0 0 36px;
   display:flex;
   gap:10px;
   align-items:center;
@@ -481,112 +437,131 @@ video, iframe, .video {
   color:var(--ink-soft);
   font-size:12px;
 }
-.person-page .footer {
-  position:relative;
-  left:auto;
-  bottom:auto;
-  z-index:3;
-  padding:18px 28px 30px;
-  background:var(--paper-solid);
-  border-top:1px solid var(--line);
-}
 .footer a {
   padding:8px 12px;
-  border-radius:999px;
-  background:var(--paper);
+  border-radius:8px;
+  background:#fff;
   border:1px solid var(--line);
-  box-shadow:var(--shadow-sm);
   text-decoration:none;
-  font-weight:700;
+  font-weight:800;
 }
-@media (max-width: 760px) {
-  body { background:#dfe7ec; }
-  .graph-field { min-height:720px; }
-  .brand, .search, .lens, .brief, .footer {
-    position:relative;
-    inset:auto;
-    transform:none;
-    width:calc(100vw - 32px);
-    margin:14px 16px 0;
+.footer span { margin-left:auto; }
+.gold { color:var(--gold); }
+@media (max-width: 860px) {
+  .topbar {
+    align-items:flex-start;
+    flex-direction:column;
+    padding:14px 18px;
+    gap:12px;
   }
-  .brand { padding:15px 16px; }
-  .brand h1 { font-size:34px; }
-  .lens { justify-content:space-between; }
-  .lens a { flex:1; justify-content:center; }
-  .brief { top:auto; }
-  .stage {
-    min-height:auto;
-    place-items:start center;
-    padding:16px 16px 28px;
+  .topnav { width:100%; }
+  .topnav a { flex:1; justify-content:center; }
+  .layout,
+  .detail-layout {
+    width:calc(100vw - 28px);
+    grid-template-columns:1fr;
+    padding-top:18px;
   }
-  .spotlight {
-    width:100%;
-    border-radius:16px;
+  .rail {
+    position:static;
   }
-  .index-spotlight {
-    max-height:none;
+  .feed-hero { padding:20px; }
+  .feed-hero h1 { font-size:42px; }
+  .feed-toolbar {
+    align-items:stretch;
+    flex-direction:column;
   }
-  .grid { grid-template-columns:1fr; }
-  .person-node span:last-child { display:none; }
+  .feed-card { grid-template-columns:1fr; }
+  .feed-media {
+    border-right:0;
+    border-bottom:1px solid var(--line);
+  }
+  .feed-media img,
+  .feed-media .avatar.poster {
+    min-height:210px;
+    max-height:280px;
+  }
+  .profile-detail { padding:18px; }
   .profile-head { flex-direction:column; }
-  .content-wrap { width:calc(100vw - 32px); padding-top:28px; }
-  .footer {
-    padding-bottom:20px;
+  .footer { width:calc(100vw - 28px); }
+  .footer span {
+    width:100%;
+    margin-left:0;
   }
 }
 </style>
 </head>
 <body class="index-page">
-<div class="graph-field" aria-hidden="true"><a class="node person-node role-introducer" href="https://people.hirey.ai/p/walter-wu" style="--x:53.8%;--y:28.3%;"><span class="avatar nodeface role-introducer"><img src="/assets/image/walter-wu-hirey-stage-pitch-0255-poster.jpg" alt="" /></span><span>Walter Wu</span></a>
-<span class="node ghost n1"></span>
-<span class="node ghost n2"></span>
-<span class="node ghost n3"></span>
-<span class="node ghost n4"></span></div>
-<header class="brand glass">
-  <a class="kicker" href="https://people.hirey.ai/"><span class="live-dot"></span> HIREY · PEOPLE SIGNALS</a>
-  <h1>Trusted people graph</h1>
-  <p>Canonical pages for real people: consent, video, transcript, Hi profile, and agent-readable context.</p>
-  <div class="stats">
-    <span><b>1</b><em>People</em></span>
-    <span><b>1</b><em>Videos</em></span>
-    <span><b>1</b><em>Hi profiles</em></span>
-    <span><b>1</b><em>Roles</em></span>
-  </div>
+<header class="topbar">
+  <a class="brandmark" href="https://people.hirey.ai/"><span class="live-dot"></span>HiRey People</a>
+  <nav class="topnav" aria-label="People navigation">
+    <a class="on" href="https://people.hirey.ai/">Feed</a>
+    <a href="https://people.hirey.ai/data/people.json">JSON</a>
+    <a href="https://people.hirey.ai/llms.txt">Agents</a>
+  </nav>
 </header>
-<div class="search glass">
-  <span aria-hidden="true">⌕</span>
-  <input id="peopleSearch" type="search" placeholder="Search a person..." autocomplete="off" />
-</div>
-<nav class="lens glass" aria-label="People graph controls">
-  <a class="on" href="https://people.hirey.ai/">People</a>
-  <a href="https://people.hirey.ai/data/people.json">JSON</a>
-  <a href="https://people.hirey.ai/llms.txt">Agents</a>
-</nav>
-<aside class="brief glass">
-  <div class="mini"><span>Trust layers</span><span>1 in graph</span></div>
-  <h2>What's verified</h2>
-  <p><b class="gold">Gold</b> means consented and video-backed · <b class="blue">blue</b> means agent-readable · <b class="green">green</b> means Hi profile attached.</p>
-</aside>
-<main class="stage">
-  <section class="spotlight glass index-spotlight">
-    <p class="eyebrow">Public directory</p>
-    <h2>People agents can cite and humans can actually trust.</h2>
-    <div class="grid" id="peopleGrid">
-      <article class="card" data-search="Walter Wu Founder of HiRey, building an agent-amplified trusted introducer network Introducer">
-        <a href="https://people.hirey.ai/p/walter-wu">
-          <span class="avatar normal role-introducer"><img src="/assets/image/walter-wu-hirey-stage-pitch-0255-poster.jpg" alt="" /></span>
-          <span>Introducer</span>
-          <strong>Walter Wu</strong>
-          <em>Founder of HiRey, building an agent-amplified trusted introducer network</em>
+<main class="layout">
+  <section class="feed">
+    <header class="feed-hero">
+      <p class="eyebrow">Video-backed people feed</p>
+      <h1>Trusted people, entering Hi one story at a time.</h1>
+      <p>Every item is a canonical person page with consent, video, transcript, structured data, and a Hi profile or claim path.</p>
+    </header>
+    <div class="feed-toolbar">
+      <label class="search">
+        <span aria-hidden="true">Search</span>
+        <input id="peopleSearch" type="search" placeholder="Name, role, topic..." autocomplete="off" />
+      </label>
+      <div class="pills" aria-label="Feed filters">
+        <span class="pill on">All</span>
+        <span class="pill">Video</span>
+        <span class="pill">Hi-linked</span>
+      </div>
+    </div>
+    <div class="feed-list" id="peopleGrid">
+      <article class="feed-card" data-search="Walter Wu Founder of HiRey, building an agent-amplified trusted introducer network Walter Wu explains the HiRey thesis from the Launch Map stage: agents can do the workflow around finding people, follow-up, and scheduling, while trusted humans keep judgment, vouching, and high-stakes introductions. Introducer">
+        <a class="feed-media" href="https://people.hirey.ai/p/walter-wu" aria-label="Walter Wu">
+          <img src="/assets/image/walter-wu-hirey-stage-pitch-0255-poster.jpg" alt="" />
         </a>
+        <div class="feed-body">
+          <p class="eyebrow">Introducer &middot; San Francisco &middot; 2026-06-17</p>
+          <h2><a href="https://people.hirey.ai/p/walter-wu">Walter Wu</a></h2>
+          <p class="headline">Founder of HiRey, building an agent-amplified trusted introducer network</p>
+          <p class="summary">Walter Wu explains the HiRey thesis from the Launch Map stage: agents can do the workflow around finding people, follow-up, and scheduling, while trusted humans keep judgment, vouching, and high-stakes introductions.</p>
+          <div class="feed-actions">
+            <a class="primary" href="https://people.hirey.ai/p/walter-wu">Watch</a>
+            <a class="secondary" href="https://hi.hirey.ai/owner/212">Hi profile</a>
+          </div>
+        </div>
       </article></div>
   </section>
+  <aside class="rail" aria-label="People feed context">
+    <section class="rail-card metric-card">
+      <span><b>1</b><em>People</em></span>
+      <span><b>1</b><em>Videos</em></span>
+      <span><b>1</b><em>Hi profiles</em></span>
+      <span><b>1</b><em>Roles</em></span>
+    </section>
+    <section class="rail-card">
+      <p class="rail-kicker">Trust policy</p>
+      <h2>Feed before virality</h2>
+      <p>People enter this feed only after consent. The public page is the canonical source; Hi stays the relationship layer.</p>
+    </section>
+    <section class="rail-card">
+      <p class="rail-kicker">Agent endpoints</p>
+      <div class="rail-links">
+        <a href="https://people.hirey.ai/data/people.json">people.json</a>
+        <a href="https://people.hirey.ai/feed.json">feed.json</a>
+        <a href="https://people.hirey.ai/llms.txt">llms.txt</a>
+      </div>
+    </section>
+  </aside>
 </main>
 <footer class="footer"><a href="https://people.hirey.ai/llms.txt">Agent-readable JSON</a><a href="https://people.hirey.ai/data/people.json">people.json</a><a href="https://hi.hirey.ai/explore">Open Hi</a></footer>
 <script>
 (() => {
   const input = document.getElementById("peopleSearch");
-  const cards = Array.from(document.querySelectorAll(".card"));
+  const cards = Array.from(document.querySelectorAll(".feed-card"));
   if (!input) return;
   input.addEventListener("input", () => {
     const q = input.value.trim().toLowerCase();
