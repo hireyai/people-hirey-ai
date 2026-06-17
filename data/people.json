@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-17T18:38:06.404144+00:00",
+  "generated_at": "2026-06-17T18:40:50.988710+00:00",
   "policy": "Public, consented, video-backed people records only. No private contact fields.",
   "people": [
     {
@@ -14,6 +14,7 @@
       "hi_owner_id": "212",
       "hi_owner_url": "https://hi.hirey.ai/owner/212",
       "video_url": "https://people.hirey.ai/assets/video/walter-wu-hirey-stage-pitch-0255-720p.mp4",
+      "thumbnail_url": "https://people.hirey.ai/assets/image/walter-wu-hirey-stage-pitch-0255-poster.jpg",
       "upload_date": "2026-06-17",
       "external_urls": {}
     }
