@@ -1,0 +1,11 @@
+{
+  "name": "HiRey People",
+  "description": "Canonical, consented, video-backed people graph for agents and humans.",
+  "url": "https://people.hirey.ai",
+  "endpoints": {
+    "people": "https://people.hirey.ai/data/people.json",
+    "feed": "https://people.hirey.ai/feed.json",
+    "sitemap": "https://people.hirey.ai/sitemap.xml",
+    "llms": "https://people.hirey.ai/llms.txt"
+  }
+}

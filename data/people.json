@@ -1,0 +1,21 @@
+{
+  "generated_at": "2026-06-17T08:00:48.934886+00:00",
+  "policy": "Public, consented, video-backed people records only. No private contact fields.",
+  "people": [
+    {
+      "video_id": "walter-wu-hirey-stage-pitch-0255",
+      "person_name": "Walter Wu",
+      "person_slug": "walter-wu",
+      "role": "introducer",
+      "headline": "Founder of HiRey, building an agent-amplified trusted introducer network",
+      "location_text": "San Francisco",
+      "summary": "Walter Wu explains the HiRey thesis from the Launch Map stage: agents can do the workflow around finding people, follow-up, and scheduling, while trusted humans keep judgment, vouching, and high-stakes introductions.",
+      "canonical_url": "https://people.hirey.ai/p/walter-wu",
+      "hi_owner_id": "212",
+      "hi_owner_url": "https://hi.hirey.ai/owner/212",
+      "video_url": "https://people.hirey.ai/assets/video/walter-wu-hirey-stage-pitch-0255-720p.mp4",
+      "upload_date": "2026-06-17",
+      "external_urls": {}
+    }
+  ]
+}

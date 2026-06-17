@@ -1,0 +1,15 @@
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": "HiRey People",
+  "home_page_url": "https://people.hirey.ai",
+  "feed_url": "https://people.hirey.ai/feed.json",
+  "items": [
+    {
+      "id": "https://people.hirey.ai/p/walter-wu",
+      "url": "https://people.hirey.ai/p/walter-wu",
+      "title": "Walter Wu — Founder of HiRey, building an agent-amplified trusted introducer network",
+      "summary": "Walter Wu explains the HiRey thesis from the Launch Map stage: agents can do the workflow around finding people, follow-up, and scheduling, while trusted humans keep judgment, vouching, and high-stakes introductions.",
+      "date_published": "2026-06-17"
+    }
+  ]
+}

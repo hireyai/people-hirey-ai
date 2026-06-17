@@ -1,0 +1,11 @@
+# HiRey People
+
+> Canonical, consented, video-backed people pages for HiRey's trusted introducer network.
+
+## Data endpoints
+- [People JSON](https://people.hirey.ai/data/people.json): public people records with canonical URLs, Hi profile URLs, and video metadata.
+- [JSON Feed](https://people.hirey.ai/feed.json): recently added people pages.
+- [Sitemap](https://people.hirey.ai/sitemap.xml): crawlable index of people pages.
+
+## Pages
+- [Walter Wu](https://people.hirey.ai/p/walter-wu): Founder of HiRey, building an agent-amplified trusted introducer network
