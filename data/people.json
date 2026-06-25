@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-17T21:20:23.982912+00:00",
+  "generated_at": "2026-06-25T06:34:09.850279+00:00",
   "policy": "Public, consented, video-backed people records only. No private contact fields.",
   "people": [
     {
@@ -43,6 +43,21 @@
         }
       ],
       "upload_date": "2026-06-17",
+      "external_urls": {}
+    },
+    {
+      "video_id": "curtis-chen-ucsd-startup-incubator-0023-0024",
+      "person_name": "Curtis Chen",
+      "person_slug": "curtis-chen",
+      "role": "operator",
+      "headline": "UCSD cognitive science graduate and Startup Incubator community builder",
+      "location_text": "San Diego / San Francisco",
+      "summary": "Curtis Chen is a recent UCSD graduate from Taiwan with a background in cognitive science, machine learning, and neurocomputation. In this long-form conversation, he explains how Startup Incubator helps students move from ideas to teams, resources, and early startups, and how his own path led him toward human-centered technology and community building.",
+      "canonical_url": "https://people.hirey.ai/p/curtis-chen",
+      "video_url": "https://people.hirey.ai/assets/video/curtis-chen-ucsd-startup-incubator-0023-0024-hardsub-480p.mp4",
+      "thumbnail_url": "https://people.hirey.ai/assets/image/curtis-chen-ucsd-startup-incubator-0023-0024-poster.jpg",
+      "subtitle_mode": "hardsub",
+      "upload_date": "2026-06-25",
       "external_urls": {}
     }
   ]

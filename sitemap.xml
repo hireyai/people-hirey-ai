@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://people.hirey.ai/</loc><lastmod>2026-06-17</lastmod></url>
+<url><loc>https://people.hirey.ai/</loc><lastmod>2026-06-25</lastmod></url>
 <url><loc>https://people.hirey.ai/p/walter-wu</loc><lastmod>2026-06-17</lastmod></url>
 <url><loc>https://people.hirey.ai/p/zubair-zafar</loc><lastmod>2026-06-17</lastmod></url>
-<url><loc>https://people.hirey.ai/data/people.json</loc><lastmod>2026-06-17</lastmod></url>
-<url><loc>https://people.hirey.ai/feed.json</loc><lastmod>2026-06-17</lastmod></url>
-<url><loc>https://people.hirey.ai/llms.txt</loc><lastmod>2026-06-17</lastmod></url>
+<url><loc>https://people.hirey.ai/p/curtis-chen</loc><lastmod>2026-06-25</lastmod></url>
+<url><loc>https://people.hirey.ai/data/people.json</loc><lastmod>2026-06-25</lastmod></url>
+<url><loc>https://people.hirey.ai/feed.json</loc><lastmod>2026-06-25</lastmod></url>
+<url><loc>https://people.hirey.ai/llms.txt</loc><lastmod>2026-06-25</lastmod></url>
 </urlset>

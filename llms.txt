@@ -10,3 +10,4 @@
 ## Pages
 - [Walter Wu](https://people.hirey.ai/p/walter-wu): Founder of HiRey, building an agent-amplified trusted connector network
 - [Zubair Zafar](https://people.hirey.ai/p/zubair-zafar): Full-stack engineer and AI builder looking for an autonomous product role in San Francisco
+- [Curtis Chen](https://people.hirey.ai/p/curtis-chen): UCSD cognitive science graduate and Startup Incubator community builder
