@@ -1,0 +1,31 @@
+{
+  "schema_version": "hirey.people.person_record.v1",
+  "video_id": "walter-wu-hirey-stage-pitch-0255",
+  "person_name": "Walter Wu",
+  "person_slug": "walter-wu",
+  "role": "connector",
+  "headline": "Founder of HiRey, building an agent-amplified trusted connector network",
+  "location_text": "San Francisco",
+  "summary": "Walter Wu explains the HiRey thesis from the Launch Map stage: agents can do the workflow around finding people, follow-up, and scheduling, while trusted humans keep judgment, vouching, and high-stakes introductions.",
+  "agent_data_url": "https://people.hirey.ai/data/people/walter-wu.json",
+  "transcript_url": "https://people.hirey.ai/data/transcripts/walter-wu.txt",
+  "transcript_char_count": 517,
+  "canonical_url": "https://people.hirey.ai/p/walter-wu",
+  "hi_owner_id": "212",
+  "hi_owner_url": "https://hi.hirey.ai/owner/212",
+  "video_url": "https://people.hirey.ai/assets/video/walter-wu-hirey-stage-pitch-0255-hardsub-720p.mp4",
+  "thumbnail_url": "https://people.hirey.ai/assets/image/walter-wu-hirey-stage-pitch-0255-poster.jpg",
+  "subtitle_mode": "hardsub",
+  "upload_date": "2026-06-17",
+  "data_policy": {
+    "default_index": "https://people.hirey.ai/data/people.json",
+    "purpose": "Full public, consented person record for humans and agents. Transcript is kept here and in a plain-text endpoint, not in the all-people index.",
+    "trust_model": "Use verified_public_facts first; use self_reported_claims as interview-backed claims; treat needs_verification as open items."
+  },
+  "transcript": {
+    "url": "https://people.hirey.ai/data/transcripts/walter-wu.txt",
+    "format": "plain_text",
+    "char_count": 517,
+    "text": "Everyone on earth should be connected by their agents. The co-founder, the hire, the mentor, the person you need is already out there, but the tools we use today were built for attention and known contacts, not for trusted strangers to meet. HiRey is a network for humans with agents: agents handle finding, follow-up, and scheduling, while humans keep the relationship, judgment, and trust. The goal is simple: tell your agent who you want to meet, let agents coordinate, and then make the real human meeting happen."
+  }
+}

@@ -4,6 +4,8 @@
   "url": "https://people.hirey.ai",
   "endpoints": {
     "people": "https://people.hirey.ai/data/people.json",
+    "person_template": "https://people.hirey.ai/data/people/{person_slug}.json",
+    "transcript_template": "https://people.hirey.ai/data/transcripts/{person_slug}.txt",
     "feed": "https://people.hirey.ai/feed.json",
     "sitemap": "https://people.hirey.ai/sitemap.xml",
     "llms": "https://people.hirey.ai/llms.txt"

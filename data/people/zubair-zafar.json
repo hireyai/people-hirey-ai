@@ -1,0 +1,40 @@
+{
+  "schema_version": "hirey.people.person_record.v1",
+  "video_id": "zubair-zafar-sf-builder-0266",
+  "person_name": "Zubair Zafar",
+  "person_slug": "zubair-zafar",
+  "role": "candidate",
+  "headline": "Full-stack engineer and AI builder looking for an autonomous product role in San Francisco",
+  "location_text": "San Francisco",
+  "summary": "Zubair Zafar talks about coming from Pakistan to the U.S., earning a full-ride Master's in Computer Science at Eastern Illinois University, building multi-agent real-estate workflows, doing MRI computer-vision research, and moving to San Francisco to join a meaningful builder community.",
+  "agent_data_url": "https://people.hirey.ai/data/people/zubair-zafar.json",
+  "transcript_url": "https://people.hirey.ai/data/transcripts/zubair-zafar.txt",
+  "transcript_char_count": 1441,
+  "canonical_url": "https://people.hirey.ai/p/zubair-zafar",
+  "video_url": "https://people.hirey.ai/assets/video/zubair-zafar-sf-builder-0266-hardsub-720p.mp4",
+  "thumbnail_url": "https://people.hirey.ai/assets/image/zubair-zafar-sf-builder-0266-poster.jpg",
+  "subtitle_mode": "hardsub",
+  "extra_videos": [
+    {
+      "video_id": "zubair-zafar-cloudflare-plasma-wall-0267",
+      "title": "Cloudflare plasma wall explainer",
+      "description": "Zubair explains the plasma wall outside Cloudflare's office and how physical randomness can be used as a source for encryption.",
+      "video_url": "https://people.hirey.ai/assets/video/zubair-zafar-cloudflare-plasma-wall-0267-hardsub-720p.mp4",
+      "thumbnail_url": "https://people.hirey.ai/assets/image/zubair-zafar-cloudflare-plasma-wall-0267-poster.jpg",
+      "subtitle_mode": "hardsub",
+      "upload_date": "2026-06-17"
+    }
+  ],
+  "upload_date": "2026-06-17",
+  "data_policy": {
+    "default_index": "https://people.hirey.ai/data/people.json",
+    "purpose": "Full public, consented person record for humans and agents. Transcript is kept here and in a plain-text endpoint, not in the all-people index.",
+    "trust_model": "Use verified_public_facts first; use self_reported_claims as interview-backed claims; treat needs_verification as open items."
+  },
+  "transcript": {
+    "url": "https://people.hirey.ai/data/transcripts/zubair-zafar.txt",
+    "format": "plain_text",
+    "char_count": 1441,
+    "text": "Today we met Zubair. Tell us a little bit about you. So I came here from Eastern Illinois University, where I got a full-ride scholarship, did my Master's in Computer Science, and got a 4.0 GPA. I have three years of full-stack development experience. I have worked on real agentic AI projects. For example, one was multi-agent orchestration of real estate. We built twelve agents using model services. Three of them go to the market on the web and understand what kind of real estate is available from your prompt. Another three verify whether those are the only available properties. The rest verify whether it is the cheapest or most reasonable place you should be investing in. That is how we are able to find out how you should invest in real estate. I also worked with a professor on MRI scans for patients with Alzheimer's and dementia, using computer vision models to detect which scans showed Alzheimer's or dementia, or which patients tended to have them. I got a full scholarship for my Master's, did not pay a single penny, and got a 4.0 GPA. From Pakistan to the U.S. is not easy. I am here in San Francisco looking for a community working on something meaningful, where I get the autonomy to work on a product myself. I would love to lead. I don't need orders. I just want to be independent about developing a project and getting the job done. This is the place I wanted to be at, so I'll be staying here for a very long while."
+  }
+}
