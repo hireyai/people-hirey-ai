@@ -1,0 +1,52 @@
+name: Daily people refresh
+
+# Regenerates people.hirey.ai person pages from the Hi consented public feed, commits only
+# real changes, then pings IndexNow. One job end-to-end: a token-pushed commit does NOT
+# re-trigger workflows, so the IndexNow ping must run here (after the push), not in a follow-up.
+
+on:
+  schedule:
+    - cron: "17 9 * * *"   # daily 09:17 UTC
+  workflow_dispatch: {}
+
+concurrency:
+  group: people-refresh
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch consented people feed
+        run: python3 scripts/fetch_people_feed.py
+
+      - name: Build person pages + aggregates
+        run: python3 scripts/build_people_pages.py
+
+      - name: Commit changes (if any)
+        id: commit
+        run: |
+          git config user.name "hirey-people-bot"
+          git config user.email "people-bot@hirey.ai"
+          git add data/ p/ feed.json sitemap.xml
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No changes."
+          else
+            git commit -m "people: daily refresh $(date -u +%F)"
+            git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Ping IndexNow
+        if: steps.commit.outputs.changed == 'true'
+        run: python3 scripts/ping_indexnow.py

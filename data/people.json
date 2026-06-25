@@ -1,58 +1,7 @@
 {
-  "generated_at": "2026-06-25T07:11:37.570935+00:00",
+  "generated_at": "2026-06-26",
   "policy": "Public, consented, video-backed people records only. No private contact fields.",
   "people": [
-    {
-      "schema_version": "hirey.people.index_record.v1",
-      "video_id": "walter-wu-hirey-stage-pitch-0255",
-      "person_name": "Walter Wu",
-      "person_slug": "walter-wu",
-      "role": "connector",
-      "headline": "Founder of HiRey, building an agent-amplified trusted connector network",
-      "location_text": "San Francisco",
-      "summary": "Walter Wu explains the HiRey thesis from the Launch Map stage: agents can do the workflow around finding people, follow-up, and scheduling, while trusted humans keep judgment, vouching, and high-stakes introductions.",
-      "agent_data_url": "https://people.hirey.ai/data/people/walter-wu.json",
-      "transcript_url": "https://people.hirey.ai/data/transcripts/walter-wu.txt",
-      "transcript_char_count": 517,
-      "canonical_url": "https://people.hirey.ai/p/walter-wu",
-      "hi_owner_id": "212",
-      "hi_owner_url": "https://hi.hirey.ai/owner/212",
-      "video_url": "https://people.hirey.ai/assets/video/walter-wu-hirey-stage-pitch-0255-hardsub-720p.mp4",
-      "thumbnail_url": "https://people.hirey.ai/assets/image/walter-wu-hirey-stage-pitch-0255-poster.jpg",
-      "subtitle_mode": "hardsub",
-      "upload_date": "2026-06-17",
-      "external_urls": {}
-    },
-    {
-      "schema_version": "hirey.people.index_record.v1",
-      "video_id": "zubair-zafar-sf-builder-0266",
-      "person_name": "Zubair Zafar",
-      "person_slug": "zubair-zafar",
-      "role": "candidate",
-      "headline": "Full-stack engineer and AI builder looking for an autonomous product role in San Francisco",
-      "location_text": "San Francisco",
-      "summary": "Zubair Zafar talks about coming from Pakistan to the U.S., earning a full-ride Master's in Computer Science at Eastern Illinois University, building multi-agent real-estate workflows, doing MRI computer-vision research, and moving to San Francisco to join a meaningful builder community.",
-      "agent_data_url": "https://people.hirey.ai/data/people/zubair-zafar.json",
-      "transcript_url": "https://people.hirey.ai/data/transcripts/zubair-zafar.txt",
-      "transcript_char_count": 1441,
-      "canonical_url": "https://people.hirey.ai/p/zubair-zafar",
-      "video_url": "https://people.hirey.ai/assets/video/zubair-zafar-sf-builder-0266-hardsub-720p.mp4",
-      "thumbnail_url": "https://people.hirey.ai/assets/image/zubair-zafar-sf-builder-0266-poster.jpg",
-      "subtitle_mode": "hardsub",
-      "extra_videos": [
-        {
-          "video_id": "zubair-zafar-cloudflare-plasma-wall-0267",
-          "title": "Cloudflare plasma wall explainer",
-          "description": "Zubair explains the plasma wall outside Cloudflare's office and how physical randomness can be used as a source for encryption.",
-          "video_url": "https://people.hirey.ai/assets/video/zubair-zafar-cloudflare-plasma-wall-0267-hardsub-720p.mp4",
-          "thumbnail_url": "https://people.hirey.ai/assets/image/zubair-zafar-cloudflare-plasma-wall-0267-poster.jpg",
-          "subtitle_mode": "hardsub",
-          "upload_date": "2026-06-17"
-        }
-      ],
-      "upload_date": "2026-06-17",
-      "external_urls": {}
-    },
     {
       "schema_version": "hirey.people.index_record.v1",
       "video_id": "curtis-chen-ucsd-startup-incubator-0023-0024",
@@ -303,6 +252,184 @@
       "thumbnail_url": "https://people.hirey.ai/assets/image/curtis-chen-ucsd-startup-incubator-0023-0024-poster-v2.jpg",
       "subtitle_mode": "hardsub",
       "upload_date": "2026-06-25",
+      "external_urls": {}
+    },
+    {
+      "schema_version": "hirey.people.index_record.v1",
+      "person_name": "Jessy Tang",
+      "person_slug": "jessy-tang",
+      "role": null,
+      "headline": "AI-native games builder and hackathon/community organizer in San Francisco",
+      "location_text": "San Francisco, California, United States",
+      "summary": "I am Jessy Tang, based in San Francisco, and I am exploring AI-native games, creator tools, and agent-mediated communities. My recent work and interests center on Arcade AI, game creation, hackathons, founder/investor networks, and helping people connect around AI, games, and new product ideas. I use Hi / Hirey.ai through Codex to discover relevant people, coordinate warm introductions, and schedule focused conversations.",
+      "agent_data_url": "https://people.hirey.ai/data/people/jessy-tang.json",
+      "canonical_url": "https://people.hirey.ai/p/jessy-tang",
+      "hi_owner_id": "408",
+      "hi_owner_url": "https://hi.hirey.ai/owner/408",
+      "video_url": "https://hi.hirey.ai/owner/408/video/ov_k8v2Rv0VLULR",
+      "thumbnail_url": null,
+      "subtitle_mode": "none",
+      "extra_videos": [
+        {
+          "video_id": "ov_rtAz-iI5TMaP",
+          "title": "Tanishtha_Papadkar_2K_subtitled_audio_optimized",
+          "caption": null,
+          "video_url": "https://hi.hirey.ai/owner/408/video/ov_rtAz-iI5TMaP",
+          "thumbnail_url": null,
+          "upload_date": "2026-06-18"
+        },
+        {
+          "video_id": "ov_mQv-QENwSg2v",
+          "title": "Kazuki_Horiguchi_2K_subtitled_audio_optimized",
+          "caption": null,
+          "video_url": "https://hi.hirey.ai/owner/408/video/ov_mQv-QENwSg2v",
+          "thumbnail_url": null,
+          "upload_date": "2026-06-18"
+        },
+        {
+          "video_id": "ov_WlvmO5UxWeep",
+          "title": "feedbacks_qa_discussion_hi_ready_audio_optimized",
+          "caption": null,
+          "video_url": "https://hi.hirey.ai/owner/408/video/ov_WlvmO5UxWeep",
+          "thumbnail_url": null,
+          "upload_date": "2026-06-18"
+        },
+        {
+          "video_id": "ov_6qCOLPHmMHJr",
+          "title": "feedbacks_qa_discussion_audio_optimized",
+          "caption": null,
+          "video_url": "https://hi.hirey.ai/owner/408/video/ov_6qCOLPHmMHJr",
+          "thumbnail_url": null,
+          "upload_date": "2026-06-18"
+        },
+        {
+          "video_id": "ov_jznKgNSZsJ-C",
+          "title": "candidate_3_raushen_chao_intro_audio_optimized",
+          "caption": null,
+          "video_url": "https://hi.hirey.ai/owner/408/video/ov_jznKgNSZsJ-C",
+          "thumbnail_url": null,
+          "upload_date": "2026-06-18"
+        },
+        {
+          "video_id": "ov_lW9SApWn1eHP",
+          "title": "candidate_2_huizhi_chen_intro_audio_optimized",
+          "caption": null,
+          "video_url": "https://hi.hirey.ai/owner/408/video/ov_lW9SApWn1eHP",
+          "thumbnail_url": null,
+          "upload_date": "2026-06-18"
+        },
+        {
+          "video_id": "ov_wXrpRiL_TNrl",
+          "title": "candidate_1_rayansh_cabra_intro_audio_optimized",
+          "caption": null,
+          "video_url": "https://hi.hirey.ai/owner/408/video/ov_wXrpRiL_TNrl",
+          "thumbnail_url": null,
+          "upload_date": "2026-06-18"
+        },
+        {
+          "video_id": "ov__BurU-lT0q5R",
+          "title": "Today's interviewee - Jacky Kuang Candidate Background Intro (2K, subtitled)",
+          "caption": "Today's interviewee. 2K upscaled subtitled candidate background introduction video. Uploaded for Jessy Tang's studio interview records.",
+          "video_url": "https://hi.hirey.ai/owner/408/video/ov__BurU-lT0q5R",
+          "thumbnail_url": null,
+          "upload_date": "2026-06-16"
+        },
+        {
+          "video_id": "ov_0UFqdfEGiiPF",
+          "title": "Today's interviewee - Ruihan Wang UI/UX",
+          "caption": "Today's interviewee. Uploaded for Jessy Tang's studio interview records.",
+          "video_url": "https://hi.hirey.ai/owner/408/video/ov_0UFqdfEGiiPF",
+          "thumbnail_url": null,
+          "upload_date": "2026-06-15"
+        },
+        {
+          "video_id": "ov_p60bt8lI9f-T",
+          "title": "Today's interviewee - Ruihan Feedbacks",
+          "caption": "Today's interviewee. Uploaded for Jessy Tang's studio interview records.",
+          "video_url": "https://hi.hirey.ai/owner/408/video/ov_p60bt8lI9f-T",
+          "thumbnail_url": null,
+          "upload_date": "2026-06-15"
+        },
+        {
+          "video_id": "ov_a36zhNrUY0rt",
+          "title": "Today's interviewee - Kuan Ju UI/UX",
+          "caption": "Today's interviewee. Uploaded for Jessy Tang's studio interview records.",
+          "video_url": "https://hi.hirey.ai/owner/408/video/ov_a36zhNrUY0rt",
+          "thumbnail_url": null,
+          "upload_date": "2026-06-15"
+        },
+        {
+          "video_id": "ov_tUJPtTnyym9q",
+          "title": "Today's interviewee - Kejia Zhu UI/UX, Hirey",
+          "caption": "Today's interviewee. Uploaded for Jessy Tang's studio interview records.",
+          "video_url": "https://hi.hirey.ai/owner/408/video/ov_tUJPtTnyym9q",
+          "thumbnail_url": null,
+          "upload_date": "2026-06-15"
+        },
+        {
+          "video_id": "ov_Y7myo__IRTDd",
+          "title": "Today's interviewee - Data Science Grad AI & Volunteer Scheduling Pro",
+          "caption": "Today's interviewee. Uploaded for Jessy Tang's studio interview records.",
+          "video_url": "https://hi.hirey.ai/owner/408/video/ov_Y7myo__IRTDd",
+          "thumbnail_url": null,
+          "upload_date": "2026-06-15"
+        }
+      ],
+      "upload_date": "2026-06-18",
+      "external_urls": {
+        "linkedin": "https://www.linkedin.com/in/jessytang/"
+      },
+      "source": "hi.public_feed"
+    },
+    {
+      "schema_version": "hirey.people.index_record.v1",
+      "video_id": "zubair-zafar-sf-builder-0266",
+      "person_name": "Zubair Zafar",
+      "person_slug": "zubair-zafar",
+      "role": "candidate",
+      "headline": "Full-stack engineer and AI builder looking for an autonomous product role in San Francisco",
+      "location_text": "San Francisco",
+      "summary": "Zubair Zafar talks about coming from Pakistan to the U.S., earning a full-ride Master's in Computer Science at Eastern Illinois University, building multi-agent real-estate workflows, doing MRI computer-vision research, and moving to San Francisco to join a meaningful builder community.",
+      "agent_data_url": "https://people.hirey.ai/data/people/zubair-zafar.json",
+      "transcript_url": "https://people.hirey.ai/data/transcripts/zubair-zafar.txt",
+      "transcript_char_count": 1441,
+      "canonical_url": "https://people.hirey.ai/p/zubair-zafar",
+      "video_url": "https://people.hirey.ai/assets/video/zubair-zafar-sf-builder-0266-hardsub-720p.mp4",
+      "thumbnail_url": "https://people.hirey.ai/assets/image/zubair-zafar-sf-builder-0266-poster.jpg",
+      "subtitle_mode": "hardsub",
+      "extra_videos": [
+        {
+          "video_id": "zubair-zafar-cloudflare-plasma-wall-0267",
+          "title": "Cloudflare plasma wall explainer",
+          "description": "Zubair explains the plasma wall outside Cloudflare's office and how physical randomness can be used as a source for encryption.",
+          "video_url": "https://people.hirey.ai/assets/video/zubair-zafar-cloudflare-plasma-wall-0267-hardsub-720p.mp4",
+          "thumbnail_url": "https://people.hirey.ai/assets/image/zubair-zafar-cloudflare-plasma-wall-0267-poster.jpg",
+          "subtitle_mode": "hardsub",
+          "upload_date": "2026-06-17"
+        }
+      ],
+      "upload_date": "2026-06-17",
+      "external_urls": {}
+    },
+    {
+      "schema_version": "hirey.people.index_record.v1",
+      "video_id": "walter-wu-hirey-stage-pitch-0255",
+      "person_name": "Walter Wu",
+      "person_slug": "walter-wu",
+      "role": "connector",
+      "headline": "Founder of HiRey, building an agent-amplified trusted connector network",
+      "location_text": "San Francisco",
+      "summary": "Walter Wu explains the HiRey thesis from the Launch Map stage: agents can do the workflow around finding people, follow-up, and scheduling, while trusted humans keep judgment, vouching, and high-stakes introductions.",
+      "agent_data_url": "https://people.hirey.ai/data/people/walter-wu.json",
+      "transcript_url": "https://people.hirey.ai/data/transcripts/walter-wu.txt",
+      "transcript_char_count": 517,
+      "canonical_url": "https://people.hirey.ai/p/walter-wu",
+      "hi_owner_id": "212",
+      "hi_owner_url": "https://hi.hirey.ai/owner/212",
+      "video_url": "https://people.hirey.ai/assets/video/walter-wu-hirey-stage-pitch-0255-hardsub-720p.mp4",
+      "thumbnail_url": "https://people.hirey.ai/assets/image/walter-wu-hirey-stage-pitch-0255-poster.jpg",
+      "subtitle_mode": "hardsub",
+      "upload_date": "2026-06-17",
       "external_urls": {}
     }
   ]

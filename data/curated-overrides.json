@@ -1,0 +1,4 @@
+{
+  "policy": "Hand-authored people whose pages/records the generator must never overwrite (they carry editorial story_sections / chapters / transcripts no endpoint produces). The generator still includes them verbatim in the aggregates.",
+  "slugs": ["walter-wu", "zubair-zafar", "curtis-chen"]
+}

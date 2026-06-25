@@ -4,12 +4,16 @@
 
 ## Data endpoints
 - [People JSON](https://people.hirey.ai/data/people.json): lightweight all-people index with canonical URLs, matching summaries, and per-person data links.
+- Person page: `https://people.hirey.ai/p/{person_slug}` — canonical, crawlable HTML person page (Person + VideoObject JSON-LD). Enumerate every `person_slug` from the People JSON index above.
 - [Person JSON](https://people.hirey.ai/data/people/{person_slug}.json): full public person record with agent profile and transcript reference.
 - [Transcript TXT](https://people.hirey.ai/data/transcripts/{person_slug}.txt): plain-text transcript for long-form retrieval.
 - [JSON Feed](https://people.hirey.ai/feed.json): recently added people pages.
 - [Sitemap](https://people.hirey.ai/sitemap.xml): crawlable index of people pages.
 
 ## Pages
+
+The full, current list of people pages is in the [People JSON index](https://people.hirey.ai/data/people.json); a few highlights:
+
 - [Walter Wu](https://people.hirey.ai/p/walter-wu): Founder of HiRey, building an agent-amplified trusted connector network
 - [Zubair Zafar](https://people.hirey.ai/p/zubair-zafar): Full-stack engineer and AI builder looking for an autonomous product role in San Francisco
 - [Curtis Chen](https://people.hirey.ai/p/curtis-chen): UCSD cognitive science graduate and Startup Incubator community builder
