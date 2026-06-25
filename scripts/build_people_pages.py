@@ -135,10 +135,15 @@ def main() -> int:
         generated_people.append(L.build_person(item, slug))
         new_generated_slugs.add(slug)
 
-    # write generated pages + records
+    # write generated pages + records. We write BOTH /p/<slug>/index.html AND the flat
+    # /p/<slug>.html (same bytes) — matching the curated convention so the canonical URL
+    # https://people.hirey.ai/p/<slug> resolves 200 directly (the flat file) instead of
+    # 301-redirecting to the trailing-slash directory form.
     for person in generated_people:
         slug = person["person_slug"]
-        write_if_changed(os.path.join(ROOT, "p", slug, "index.html"), L.render_page(template, person))
+        page_html = L.render_page(template, person)
+        write_if_changed(os.path.join(ROOT, "p", slug, "index.html"), page_html)
+        write_if_changed(os.path.join(ROOT, "p", f"{slug}.html"), page_html)
         write_if_changed(os.path.join(P_DATA_PEOPLE, f"{slug}.json"), L.json_dumps_stable(L.person_record(person)))
 
     # prune generated people who left the feed (privacy: went private / no media)
@@ -148,9 +153,9 @@ def main() -> int:
         d = os.path.join(ROOT, "p", slug)
         if os.path.isdir(d):
             shutil.rmtree(d)
-        rec = os.path.join(P_DATA_PEOPLE, f"{slug}.json")
-        if os.path.exists(rec):
-            os.remove(rec)
+        for stray in (os.path.join(ROOT, "p", f"{slug}.html"), os.path.join(P_DATA_PEOPLE, f"{slug}.json")):
+            if os.path.exists(stray):
+                os.remove(stray)
 
     # aggregates: curated (verbatim) + generated
     generated_index = [L.index_record(p) for p in generated_people]
