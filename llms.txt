@@ -3,7 +3,7 @@
 > Canonical, consented, video-backed people pages for HiRey's trusted connector network.
 
 ## Data endpoints
-- [People JSON](https://people.hirey.ai/data/people.json): public people records with canonical URLs, Hi profile URLs, and video metadata.
+- [People JSON](https://people.hirey.ai/data/people.json): public people records with canonical URLs, Hi action URLs, and video metadata.
 - [JSON Feed](https://people.hirey.ai/feed.json): recently added people pages.
 - [Sitemap](https://people.hirey.ai/sitemap.xml): crawlable index of people pages.
 
