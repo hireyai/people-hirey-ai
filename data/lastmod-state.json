@@ -3,6 +3,14 @@
     "hash": "42e1ad060c393bc7",
     "lastmod": "2026-06-25"
   },
+  "https://people.hirey.ai/p/tripo-ai": {
+    "hash": "9c3c270625647d2e",
+    "lastmod": "2026-06-27"
+  },
+  "https://people.hirey.ai/data/people/tripo-ai.json": {
+    "hash": "d96d4276bb641a28",
+    "lastmod": "2026-06-27"
+  },
   "https://people.hirey.ai/p/curtis-chen": {
     "hash": "76264f2b2ce50fc0",
     "lastmod": "2026-06-25"
@@ -14,14 +22,6 @@
   "https://people.hirey.ai/data/transcripts/curtis-chen.txt": {
     "hash": "8c31e84ed545a24a",
     "lastmod": "2026-06-25"
-  },
-  "https://people.hirey.ai/p/jessy-tang": {
-    "hash": "396188af27119e90",
-    "lastmod": "2026-06-26"
-  },
-  "https://people.hirey.ai/data/people/jessy-tang.json": {
-    "hash": "3f4c333db08fc929",
-    "lastmod": "2026-06-26"
   },
   "https://people.hirey.ai/p/zubair-zafar": {
     "hash": "7927e4a6f1c912bb",
@@ -48,12 +48,12 @@
     "lastmod": "2026-06-17"
   },
   "https://people.hirey.ai/data/people.json": {
-    "hash": "4559f8a0414e3885",
-    "lastmod": "2026-06-26"
+    "hash": "9f0d26f42066e956",
+    "lastmod": "2026-06-27"
   },
   "https://people.hirey.ai/feed.json": {
-    "hash": "9d076c05c2002076",
-    "lastmod": "2026-06-26"
+    "hash": "75c89558b67e2ea0",
+    "lastmod": "2026-06-27"
   },
   "https://people.hirey.ai/llms.txt": {
     "hash": "b5704e9020f675f7",

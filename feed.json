@@ -5,18 +5,18 @@
   "feed_url": "https://people.hirey.ai/feed.json",
   "items": [
     {
+      "id": "https://people.hirey.ai/p/tripo-ai",
+      "url": "https://people.hirey.ai/p/tripo-ai",
+      "title": "Tripo AI",
+      "summary": "Tripo AI",
+      "date_published": "2026-06-26"
+    },
+    {
       "id": "https://people.hirey.ai/p/curtis-chen",
       "url": "https://people.hirey.ai/p/curtis-chen",
       "title": "Curtis Chen — UCSD cognitive science graduate and Startup Incubator community builder",
       "summary": "Curtis Chen is a recent UCSD graduate from Taiwan with a background in cognitive science, machine learning, and neurocomputation. In this long-form conversation, he explains how Startup Incubator helps students move from ideas to teams, resources, and early startups, and how his own path led him toward human-centered technology and community building.",
       "date_published": "2026-06-25"
-    },
-    {
-      "id": "https://people.hirey.ai/p/jessy-tang",
-      "url": "https://people.hirey.ai/p/jessy-tang",
-      "title": "Jessy Tang — AI-native games builder and hackathon/community organizer in San Francisco",
-      "summary": "I am Jessy Tang, based in San Francisco, and I am exploring AI-native games, creator tools, and agent-mediated communities. My recent work and interests center on Arcade AI, game creation, hackathons, founder/investor networks, and helping people connect around AI, games, and new product ideas. I use Hi / Hirey.ai through Codex to discover relevant people, coordinate warm introductions, and schedule focused conversations.",
-      "date_published": "2026-06-18"
     },
     {
       "id": "https://people.hirey.ai/p/zubair-zafar",

@@ -1,0 +1,35 @@
+{
+  "schema_version": "hirey.people.person_record.v1",
+  "person_name": "Tripo AI",
+  "person_slug": "tripo-ai",
+  "role": null,
+  "headline": null,
+  "location_text": null,
+  "summary": "Tripo AI",
+  "agent_data_url": "https://people.hirey.ai/data/people/tripo-ai.json",
+  "canonical_url": "https://people.hirey.ai/p/tripo-ai",
+  "hi_owner_id": "16105",
+  "hi_owner_url": "https://hi.hirey.ai/owner/16105",
+  "video_url": null,
+  "thumbnail_url": "https://hi.hirey.ai/owner/16105/image/oi_hhGlsKLzwxiE",
+  "subtitle_mode": "none",
+  "videos": [],
+  "images": [
+    {
+      "image_id": "oi_hhGlsKLzwxiE",
+      "image_url": "https://hi.hirey.ai/owner/16105/image/oi_hhGlsKLzwxiE",
+      "title": "Tripo AI logo on black background",
+      "caption": "Tripo AI logo with black background for company profile display.",
+      "alt_text": "Tripo AI logo on a black background",
+      "upload_date": "2026-06-26"
+    }
+  ],
+  "external_urls": {},
+  "upload_date": "2026-06-26",
+  "verified": false,
+  "data_policy": {
+    "default_index": "https://people.hirey.ai/data/people.json",
+    "purpose": "Public, consented, video-backed person record sourced from the owner's Hi profile public feed. No private contact fields.",
+    "trust_model": "Profile + approved-public media the person published on Hi. Use the Hi profile link for the live source of truth."
+  }
+}

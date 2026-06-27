@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url><loc>https://people.hirey.ai/</loc><lastmod>2026-06-25</lastmod></url>
+<url><loc>https://people.hirey.ai/p/tripo-ai</loc><lastmod>2026-06-27</lastmod></url>
+<url><loc>https://people.hirey.ai/data/people/tripo-ai.json</loc><lastmod>2026-06-27</lastmod></url>
 <url><loc>https://people.hirey.ai/p/curtis-chen</loc><lastmod>2026-06-25</lastmod></url>
 <url><loc>https://people.hirey.ai/data/people/curtis-chen.json</loc><lastmod>2026-06-25</lastmod></url>
 <url><loc>https://people.hirey.ai/data/transcripts/curtis-chen.txt</loc><lastmod>2026-06-25</lastmod></url>
-<url><loc>https://people.hirey.ai/p/jessy-tang</loc><lastmod>2026-06-26</lastmod></url>
-<url><loc>https://people.hirey.ai/data/people/jessy-tang.json</loc><lastmod>2026-06-26</lastmod></url>
 <url><loc>https://people.hirey.ai/p/zubair-zafar</loc><lastmod>2026-06-17</lastmod></url>
 <url><loc>https://people.hirey.ai/data/people/zubair-zafar.json</loc><lastmod>2026-06-17</lastmod></url>
 <url><loc>https://people.hirey.ai/data/transcripts/zubair-zafar.txt</loc><lastmod>2026-06-17</lastmod></url>
 <url><loc>https://people.hirey.ai/p/walter-wu</loc><lastmod>2026-06-17</lastmod></url>
 <url><loc>https://people.hirey.ai/data/people/walter-wu.json</loc><lastmod>2026-06-17</lastmod></url>
 <url><loc>https://people.hirey.ai/data/transcripts/walter-wu.txt</loc><lastmod>2026-06-17</lastmod></url>
-<url><loc>https://people.hirey.ai/data/people.json</loc><lastmod>2026-06-26</lastmod></url>
-<url><loc>https://people.hirey.ai/feed.json</loc><lastmod>2026-06-26</lastmod></url>
+<url><loc>https://people.hirey.ai/data/people.json</loc><lastmod>2026-06-27</lastmod></url>
+<url><loc>https://people.hirey.ai/feed.json</loc><lastmod>2026-06-27</lastmod></url>
 <url><loc>https://people.hirey.ai/llms.txt</loc><lastmod>2026-06-25</lastmod></url>
 </urlset>
