@@ -1,0 +1,46 @@
+{
+  "schema_version": "hirey.people.person_record.v1",
+  "person_name": "Walter Wu",
+  "person_slug": "walter-wu-212",
+  "role": null,
+  "headline": "Founder of HiRey, helping people meet the right people through AI agents and trusted Connectors",
+  "location_text": "San Francisco Bay Area, CA",
+  "summary": "I'm Walter Wu 武鹏飞 / wuwuwuwu, founder of HiRey by Hirey, Inc., based in the San Francisco Bay Area. HiRey helps people meet the right people through their own AI agents and trusted human Connectors. If you want to meet an investor, founder, candidate, customer, partner, expert, agency, caregiver, or someone useful in a community, your agent should be able to understand your intent, find relevant people, explain why the match makes sense, and help coordinate the next step. Humans still make the judgment, give the trust, and show up for the real conversation. About Me - Founder of HiRey / Hirey…",
+  "agent_data_url": "https://people.hirey.ai/data/people/walter-wu-212.json",
+  "canonical_url": "https://people.hirey.ai/p/walter-wu-212",
+  "hi_owner_id": "212",
+  "hi_owner_url": "https://hi.hirey.ai/owner/212",
+  "video_url": null,
+  "thumbnail_url": "https://hi.hirey.ai/owner/212/image/oi_mbIm7CAiieCj",
+  "subtitle_mode": "none",
+  "videos": [],
+  "images": [
+    {
+      "image_id": "oi_mbIm7CAiieCj",
+      "image_url": "https://hi.hirey.ai/owner/212/image/oi_mbIm7CAiieCj",
+      "title": null,
+      "caption": null,
+      "alt_text": null,
+      "upload_date": "2026-06-28"
+    },
+    {
+      "image_id": "oi_qDVZq0PM7TIU",
+      "image_url": "https://hi.hirey.ai/owner/212/image/oi_qDVZq0PM7TIU",
+      "title": null,
+      "caption": null,
+      "alt_text": null,
+      "upload_date": "2026-06-28"
+    }
+  ],
+  "external_urls": {
+    "website": "https://hirey.ai",
+    "twitter": "https://twitter.com/walterwu44739"
+  },
+  "upload_date": "2026-06-27",
+  "verified": false,
+  "data_policy": {
+    "default_index": "https://people.hirey.ai/data/people.json",
+    "purpose": "Public, consented, video-backed person record sourced from the owner's Hi profile public feed. No private contact fields.",
+    "trust_model": "Profile + approved-public media the person published on Hi. Use the Hi profile link for the live source of truth."
+  }
+}

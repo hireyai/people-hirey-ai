@@ -3,6 +3,14 @@
     "hash": "42e1ad060c393bc7",
     "lastmod": "2026-06-25"
   },
+  "https://people.hirey.ai/p/walter-wu-212": {
+    "hash": "ad04b9df98f0c3f1",
+    "lastmod": "2026-06-28"
+  },
+  "https://people.hirey.ai/data/people/walter-wu-212.json": {
+    "hash": "0d2fa26b3938e35a",
+    "lastmod": "2026-06-28"
+  },
   "https://people.hirey.ai/p/tripo-ai": {
     "hash": "9c3c270625647d2e",
     "lastmod": "2026-06-27"
@@ -48,12 +56,12 @@
     "lastmod": "2026-06-17"
   },
   "https://people.hirey.ai/data/people.json": {
-    "hash": "9f0d26f42066e956",
-    "lastmod": "2026-06-27"
+    "hash": "62c61f2d341064bc",
+    "lastmod": "2026-06-28"
   },
   "https://people.hirey.ai/feed.json": {
-    "hash": "75c89558b67e2ea0",
-    "lastmod": "2026-06-27"
+    "hash": "7593adfe74477f7d",
+    "lastmod": "2026-06-28"
   },
   "https://people.hirey.ai/llms.txt": {
     "hash": "b5704e9020f675f7",

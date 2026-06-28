@@ -5,6 +5,13 @@
   "feed_url": "https://people.hirey.ai/feed.json",
   "items": [
     {
+      "id": "https://people.hirey.ai/p/walter-wu-212",
+      "url": "https://people.hirey.ai/p/walter-wu-212",
+      "title": "Walter Wu — Founder of HiRey, helping people meet the right people through AI agents and trusted Connectors",
+      "summary": "I'm Walter Wu 武鹏飞 / wuwuwuwu, founder of HiRey by Hirey, Inc., based in the San Francisco Bay Area. HiRey helps people meet the right people through their own AI agents and trusted human Connectors. If you want to meet an investor, founder, candidate, customer, partner, expert, agency, caregiver, or someone useful in a community, your agent should be able to understand your intent, find relevant people, explain why the match makes sense, and help coordinate the next step. Humans still make the judgment, give the trust, and show up for the real conversation. About Me - Founder of HiRey / Hirey…",
+      "date_published": "2026-06-27"
+    },
+    {
       "id": "https://people.hirey.ai/p/tripo-ai",
       "url": "https://people.hirey.ai/p/tripo-ai",
       "title": "Tripo AI",
