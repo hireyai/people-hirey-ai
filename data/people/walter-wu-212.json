@@ -10,11 +10,100 @@
   "canonical_url": "https://people.hirey.ai/p/walter-wu-212",
   "hi_owner_id": "212",
   "hi_owner_url": "https://hi.hirey.ai/owner/212",
-  "video_url": null,
-  "thumbnail_url": "https://hi.hirey.ai/owner/212/image/oi_mbIm7CAiieCj",
+  "video_url": "https://hi.hirey.ai/owner/212/video/ov_hS9XK-jfmgxp",
+  "thumbnail_url": "https://hi.hirey.ai/owner/212/image/oi_haxE52w1q15Z",
   "subtitle_mode": "none",
-  "videos": [],
+  "videos": [
+    {
+      "video_id": "ov_hS9XK-jfmgxp",
+      "title": "Bhavy Metakar on Hippos and a foundation model for the human body",
+      "caption": "Walter interviewed Bhavy Metakar about Hippos: a physical-intelligence layer for the human body, starting with Edge AI that predicts physical failures and deploys an airbag to reduce injury risk.\n\nIn the interview, Bhavy talks about why he and his cofounder started from sports injuries, built dorm-room prototypes, and shipped early products for performance and readiness use cases.\n\nThis is a HiRey interview upload. Bhavy Metakar is the interviewee.",
+      "video_url": "https://hi.hirey.ai/owner/212/video/ov_hS9XK-jfmgxp",
+      "thumbnail_url": null,
+      "upload_date": "2026-06-29"
+    },
+    {
+      "video_id": "ov_XeRmkMKcjXIx",
+      "title": "Jiye Kim on early-stage investing and BLT & Partners",
+      "caption": "Walter interviewed Jiye Kim about what BLT & Partners looks for: early-stage startups with their own technology, AI and computing, consumer startups, and motivated founders around the world.\n\nThis is a HiRey interview upload. Jiye Kim is the interviewee.",
+      "video_url": "https://hi.hirey.ai/owner/212/video/ov_XeRmkMKcjXIx",
+      "thumbnail_url": null,
+      "upload_date": "2026-06-29"
+    }
+  ],
   "images": [
+    {
+      "image_id": "oi_haxE52w1q15Z",
+      "image_url": "https://hi.hirey.ai/owner/212/image/oi_haxE52w1q15Z",
+      "title": null,
+      "caption": null,
+      "alt_text": null,
+      "upload_date": "2026-06-29"
+    },
+    {
+      "image_id": "oi_O4jq15qnZu11",
+      "image_url": "https://hi.hirey.ai/owner/212/image/oi_O4jq15qnZu11",
+      "title": null,
+      "caption": null,
+      "alt_text": null,
+      "upload_date": "2026-06-29"
+    },
+    {
+      "image_id": "oi_4KLVywj6_UrE",
+      "image_url": "https://hi.hirey.ai/owner/212/image/oi_4KLVywj6_UrE",
+      "title": null,
+      "caption": null,
+      "alt_text": null,
+      "upload_date": "2026-06-29"
+    },
+    {
+      "image_id": "oi_KPA5cdCxJ1v3",
+      "image_url": "https://hi.hirey.ai/owner/212/image/oi_KPA5cdCxJ1v3",
+      "title": null,
+      "caption": null,
+      "alt_text": null,
+      "upload_date": "2026-06-29"
+    },
+    {
+      "image_id": "oi_WSmBsfS2hQrH",
+      "image_url": "https://hi.hirey.ai/owner/212/image/oi_WSmBsfS2hQrH",
+      "title": null,
+      "caption": null,
+      "alt_text": null,
+      "upload_date": "2026-06-29"
+    },
+    {
+      "image_id": "oi_pvmesoiYUYEm",
+      "image_url": "https://hi.hirey.ai/owner/212/image/oi_pvmesoiYUYEm",
+      "title": null,
+      "caption": null,
+      "alt_text": null,
+      "upload_date": "2026-06-29"
+    },
+    {
+      "image_id": "oi_Ea69ZinL69yI",
+      "image_url": "https://hi.hirey.ai/owner/212/image/oi_Ea69ZinL69yI",
+      "title": null,
+      "caption": null,
+      "alt_text": null,
+      "upload_date": "2026-06-28"
+    },
+    {
+      "image_id": "oi_VL5ea2Q1hp-r",
+      "image_url": "https://hi.hirey.ai/owner/212/image/oi_VL5ea2Q1hp-r",
+      "title": null,
+      "caption": null,
+      "alt_text": null,
+      "upload_date": "2026-06-28"
+    },
+    {
+      "image_id": "oi_D16LjCI6fBcY",
+      "image_url": "https://hi.hirey.ai/owner/212/image/oi_D16LjCI6fBcY",
+      "title": null,
+      "caption": null,
+      "alt_text": null,
+      "upload_date": "2026-06-28"
+    },
     {
       "image_id": "oi_mbIm7CAiieCj",
       "image_url": "https://hi.hirey.ai/owner/212/image/oi_mbIm7CAiieCj",
@@ -36,7 +125,7 @@
     "website": "https://hirey.ai",
     "twitter": "https://twitter.com/walterwu44739"
   },
-  "upload_date": "2026-06-27",
+  "upload_date": "2026-06-29",
   "verified": false,
   "data_policy": {
     "default_index": "https://people.hirey.ai/data/people.json",

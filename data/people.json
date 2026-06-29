@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-28",
+  "generated_at": "2026-06-29",
   "policy": "Public, consented, video-backed people records only. No private contact fields.",
   "people": [
     {
@@ -14,11 +14,20 @@
       "canonical_url": "https://people.hirey.ai/p/walter-wu-212",
       "hi_owner_id": "212",
       "hi_owner_url": "https://hi.hirey.ai/owner/212",
-      "video_url": null,
-      "thumbnail_url": "https://hi.hirey.ai/owner/212/image/oi_mbIm7CAiieCj",
+      "video_url": "https://hi.hirey.ai/owner/212/video/ov_hS9XK-jfmgxp",
+      "thumbnail_url": "https://hi.hirey.ai/owner/212/image/oi_haxE52w1q15Z",
       "subtitle_mode": "none",
-      "extra_videos": [],
-      "upload_date": "2026-06-27",
+      "extra_videos": [
+        {
+          "video_id": "ov_XeRmkMKcjXIx",
+          "title": "Jiye Kim on early-stage investing and BLT & Partners",
+          "caption": "Walter interviewed Jiye Kim about what BLT & Partners looks for: early-stage startups with their own technology, AI and computing, consumer startups, and motivated founders around the world.\n\nThis is a HiRey interview upload. Jiye Kim is the interviewee.",
+          "video_url": "https://hi.hirey.ai/owner/212/video/ov_XeRmkMKcjXIx",
+          "thumbnail_url": null,
+          "upload_date": "2026-06-29"
+        }
+      ],
+      "upload_date": "2026-06-29",
       "external_urls": {
         "website": "https://hirey.ai",
         "twitter": "https://twitter.com/walterwu44739"
