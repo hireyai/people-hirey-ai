@@ -1,0 +1,35 @@
+{
+  "schema_version": "hirey.people.person_record.v1",
+  "person_name": "Heroza Zhang",
+  "person_slug": "heroza-zhang",
+  "role": null,
+  "headline": null,
+  "location_text": null,
+  "summary": "Heroza Zhang",
+  "agent_data_url": "https://people.hirey.ai/data/people/heroza-zhang.json",
+  "canonical_url": "https://people.hirey.ai/p/heroza-zhang",
+  "hi_owner_id": "16174",
+  "hi_owner_url": "https://hi.hirey.ai/owner/16174",
+  "video_url": null,
+  "thumbnail_url": "https://hi.hirey.ai/owner/16174/image/oi_t9Tp9lcjMf58",
+  "subtitle_mode": "none",
+  "videos": [],
+  "images": [
+    {
+      "image_id": "oi_t9Tp9lcjMf58",
+      "image_url": "https://hi.hirey.ai/owner/16174/image/oi_t9Tp9lcjMf58",
+      "title": null,
+      "caption": null,
+      "alt_text": null,
+      "upload_date": "2026-06-30"
+    }
+  ],
+  "external_urls": {},
+  "upload_date": "2026-06-30",
+  "verified": false,
+  "data_policy": {
+    "default_index": "https://people.hirey.ai/data/people.json",
+    "purpose": "Public, consented, video-backed person record sourced from the owner's Hi profile public feed. No private contact fields.",
+    "trust_model": "Profile + approved-public media the person published on Hi. Use the Hi profile link for the live source of truth."
+  }
+}

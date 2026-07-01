@@ -3,13 +3,21 @@
     "hash": "42e1ad060c393bc7",
     "lastmod": "2026-06-25"
   },
+  "https://people.hirey.ai/p/heroza-zhang": {
+    "hash": "5126aea214343225",
+    "lastmod": "2026-07-01"
+  },
+  "https://people.hirey.ai/data/people/heroza-zhang.json": {
+    "hash": "698248956e87968a",
+    "lastmod": "2026-07-01"
+  },
   "https://people.hirey.ai/p/walter-wu-212": {
-    "hash": "aa96997809a87d65",
-    "lastmod": "2026-06-30"
+    "hash": "c048ac09a31b9a93",
+    "lastmod": "2026-07-01"
   },
   "https://people.hirey.ai/data/people/walter-wu-212.json": {
-    "hash": "1d5cdcad33169c21",
-    "lastmod": "2026-06-30"
+    "hash": "479f3c35d8bea6b6",
+    "lastmod": "2026-07-01"
   },
   "https://people.hirey.ai/p/lawrence-lou": {
     "hash": "ec508bd98607d8ca",
@@ -64,12 +72,12 @@
     "lastmod": "2026-06-17"
   },
   "https://people.hirey.ai/data/people.json": {
-    "hash": "e0b1372fa7aaed8c",
-    "lastmod": "2026-06-30"
+    "hash": "e83c47563aeaed9a",
+    "lastmod": "2026-07-01"
   },
   "https://people.hirey.ai/feed.json": {
-    "hash": "1cb3e97fe5c1f09e",
-    "lastmod": "2026-06-30"
+    "hash": "2e0b536e34e7064d",
+    "lastmod": "2026-07-01"
   },
   "https://people.hirey.ai/llms.txt": {
     "hash": "b5704e9020f675f7",

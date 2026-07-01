@@ -1,10 +1,30 @@
 {
-  "generated_at": "2026-06-30",
+  "generated_at": "2026-07-01",
   "policy": "Public, consented, video-backed people records only. No private contact fields.",
   "people": [
     {
       "schema_version": "hirey.people.index_record.v1",
-      "person_name": "Walter Wu",
+      "person_name": "Heroza Zhang",
+      "person_slug": "heroza-zhang",
+      "role": null,
+      "headline": null,
+      "location_text": null,
+      "summary": "Heroza Zhang",
+      "agent_data_url": "https://people.hirey.ai/data/people/heroza-zhang.json",
+      "canonical_url": "https://people.hirey.ai/p/heroza-zhang",
+      "hi_owner_id": "16174",
+      "hi_owner_url": "https://hi.hirey.ai/owner/16174",
+      "video_url": null,
+      "thumbnail_url": "https://hi.hirey.ai/owner/16174/image/oi_t9Tp9lcjMf58",
+      "subtitle_mode": "none",
+      "extra_videos": [],
+      "upload_date": "2026-06-30",
+      "external_urls": {},
+      "source": "hi.public_feed"
+    },
+    {
+      "schema_version": "hirey.people.index_record.v1",
+      "person_name": "Hirey AI",
       "person_slug": "walter-wu-212",
       "role": null,
       "headline": "Founder of HiRey, helping people meet the right people through AI agents and trusted Connectors",
