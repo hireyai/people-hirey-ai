@@ -1,6 +1,6 @@
 {
   "schema_version": "hirey.people.person_record.v1",
-  "person_name": "Hirey AI",
+  "person_name": "Walter Wu",
   "person_slug": "walter-wu-212",
   "role": null,
   "headline": "Founder of HiRey, helping people meet the right people through AI agents and trusted Connectors",
@@ -11,7 +11,7 @@
   "hi_owner_id": "212",
   "hi_owner_url": "https://hi.hirey.ai/owner/212",
   "video_url": "https://hi.hirey.ai/owner/212/video/ov_hS9XK-jfmgxp",
-  "thumbnail_url": "https://hi.hirey.ai/owner/212/image/oi_isPyD2TmBs82",
+  "thumbnail_url": "https://hi.hirey.ai/owner/212/image/oi_-ijvgUpQrBOH",
   "subtitle_mode": "none",
   "videos": [
     {
@@ -32,6 +32,22 @@
     }
   ],
   "images": [
+    {
+      "image_id": "oi_-ijvgUpQrBOH",
+      "image_url": "https://hi.hirey.ai/owner/212/image/oi_-ijvgUpQrBOH",
+      "title": null,
+      "caption": null,
+      "alt_text": null,
+      "upload_date": "2026-07-02"
+    },
+    {
+      "image_id": "oi_vdDQYa89I6pd",
+      "image_url": "https://hi.hirey.ai/owner/212/image/oi_vdDQYa89I6pd",
+      "title": null,
+      "caption": null,
+      "alt_text": null,
+      "upload_date": "2026-07-01"
+    },
     {
       "image_id": "oi_isPyD2TmBs82",
       "image_url": "https://hi.hirey.ai/owner/212/image/oi_isPyD2TmBs82",

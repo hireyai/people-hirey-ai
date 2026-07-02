@@ -3,6 +3,14 @@
     "hash": "42e1ad060c393bc7",
     "lastmod": "2026-06-25"
   },
+  "https://people.hirey.ai/p/lawrence-lou": {
+    "hash": "be3f497c4d9510d1",
+    "lastmod": "2026-07-02"
+  },
+  "https://people.hirey.ai/data/people/lawrence-lou.json": {
+    "hash": "a18b5a101db2e63c",
+    "lastmod": "2026-07-02"
+  },
   "https://people.hirey.ai/p/heroza-zhang": {
     "hash": "5126aea214343225",
     "lastmod": "2026-07-01"
@@ -12,20 +20,12 @@
     "lastmod": "2026-07-01"
   },
   "https://people.hirey.ai/p/walter-wu-212": {
-    "hash": "c048ac09a31b9a93",
-    "lastmod": "2026-07-01"
+    "hash": "73874ba54a200e10",
+    "lastmod": "2026-07-02"
   },
   "https://people.hirey.ai/data/people/walter-wu-212.json": {
-    "hash": "479f3c35d8bea6b6",
-    "lastmod": "2026-07-01"
-  },
-  "https://people.hirey.ai/p/lawrence-lou": {
-    "hash": "ec508bd98607d8ca",
-    "lastmod": "2026-06-30"
-  },
-  "https://people.hirey.ai/data/people/lawrence-lou.json": {
-    "hash": "4f5efa2e3571bb0f",
-    "lastmod": "2026-06-30"
+    "hash": "631b42eeedd43521",
+    "lastmod": "2026-07-02"
   },
   "https://people.hirey.ai/p/tripo-ai": {
     "hash": "9c3c270625647d2e",
@@ -72,12 +72,12 @@
     "lastmod": "2026-06-17"
   },
   "https://people.hirey.ai/data/people.json": {
-    "hash": "e83c47563aeaed9a",
-    "lastmod": "2026-07-01"
+    "hash": "1185e70f33d8a513",
+    "lastmod": "2026-07-02"
   },
   "https://people.hirey.ai/feed.json": {
-    "hash": "2e0b536e34e7064d",
-    "lastmod": "2026-07-01"
+    "hash": "6c38899e64682328",
+    "lastmod": "2026-07-02"
   },
   "https://people.hirey.ai/llms.txt": {
     "hash": "b5704e9020f675f7",

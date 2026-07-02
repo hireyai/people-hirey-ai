@@ -1,7 +1,30 @@
 {
-  "generated_at": "2026-07-01",
+  "generated_at": "2026-07-02",
   "policy": "Public, consented, video-backed people records only. No private contact fields.",
   "people": [
+    {
+      "schema_version": "hirey.people.index_record.v1",
+      "person_name": "Lawrence Lou",
+      "person_slug": "lawrence-lou",
+      "role": null,
+      "headline": "Venture partner and SPV fund operator focused on AI agents and recruiting tech",
+      "location_text": "San Mateo, CA",
+      "summary": "Venture partner and SPV fund operator investing in AI agents and recruiting technology, with a focus on connecting ambitious founders, talent, and capital.",
+      "agent_data_url": "https://people.hirey.ai/data/people/lawrence-lou.json",
+      "canonical_url": "https://people.hirey.ai/p/lawrence-lou",
+      "hi_owner_id": "470",
+      "hi_owner_url": "https://hi.hirey.ai/owner/470",
+      "video_url": null,
+      "thumbnail_url": "https://hi.hirey.ai/owner/470/image/oi__pKLL7xytqL9",
+      "subtitle_mode": "none",
+      "extra_videos": [],
+      "upload_date": "2026-07-02",
+      "external_urls": {
+        "linkedin": "https://www.linkedin.com/in/lawrence-lou/",
+        "twitter": "https://twitter.com/LawrenceLou_ai"
+      },
+      "source": "hi.public_feed"
+    },
     {
       "schema_version": "hirey.people.index_record.v1",
       "person_name": "Heroza Zhang",
@@ -24,7 +47,7 @@
     },
     {
       "schema_version": "hirey.people.index_record.v1",
-      "person_name": "Hirey AI",
+      "person_name": "Walter Wu",
       "person_slug": "walter-wu-212",
       "role": null,
       "headline": "Founder of HiRey, helping people meet the right people through AI agents and trusted Connectors",
@@ -35,7 +58,7 @@
       "hi_owner_id": "212",
       "hi_owner_url": "https://hi.hirey.ai/owner/212",
       "video_url": "https://hi.hirey.ai/owner/212/video/ov_hS9XK-jfmgxp",
-      "thumbnail_url": "https://hi.hirey.ai/owner/212/image/oi_isPyD2TmBs82",
+      "thumbnail_url": "https://hi.hirey.ai/owner/212/image/oi_-ijvgUpQrBOH",
       "subtitle_mode": "none",
       "extra_videos": [
         {
@@ -51,29 +74,6 @@
       "external_urls": {
         "website": "https://hirey.ai",
         "twitter": "https://twitter.com/walterwu44739"
-      },
-      "source": "hi.public_feed"
-    },
-    {
-      "schema_version": "hirey.people.index_record.v1",
-      "person_name": "Lawrence Lou",
-      "person_slug": "lawrence-lou",
-      "role": null,
-      "headline": "Venture partner and SPV fund operator focused on AI agents and recruiting tech",
-      "location_text": "San Mateo, CA",
-      "summary": "Venture partner and SPV fund operator investing in AI agents and recruiting technology, with a focus on connecting ambitious founders, talent, and capital.",
-      "agent_data_url": "https://people.hirey.ai/data/people/lawrence-lou.json",
-      "canonical_url": "https://people.hirey.ai/p/lawrence-lou",
-      "hi_owner_id": "470",
-      "hi_owner_url": "https://hi.hirey.ai/owner/470",
-      "video_url": null,
-      "thumbnail_url": "https://hi.hirey.ai/owner/470/image/oi_4J1ERuj7Re11",
-      "subtitle_mode": "none",
-      "extra_videos": [],
-      "upload_date": "2026-06-29",
-      "external_urls": {
-        "linkedin": "https://www.linkedin.com/in/lawrence-lou/",
-        "twitter": "https://twitter.com/LawrenceLou_ai"
       },
       "source": "hi.public_feed"
     },

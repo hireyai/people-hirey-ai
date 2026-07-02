@@ -11,10 +11,42 @@
   "hi_owner_id": "470",
   "hi_owner_url": "https://hi.hirey.ai/owner/470",
   "video_url": null,
-  "thumbnail_url": "https://hi.hirey.ai/owner/470/image/oi_4J1ERuj7Re11",
+  "thumbnail_url": "https://hi.hirey.ai/owner/470/image/oi__pKLL7xytqL9",
   "subtitle_mode": "none",
   "videos": [],
   "images": [
+    {
+      "image_id": "oi__pKLL7xytqL9",
+      "image_url": "https://hi.hirey.ai/owner/470/image/oi__pKLL7xytqL9",
+      "title": null,
+      "caption": null,
+      "alt_text": null,
+      "upload_date": "2026-07-02"
+    },
+    {
+      "image_id": "oi_anyPFsCB7oVB",
+      "image_url": "https://hi.hirey.ai/owner/470/image/oi_anyPFsCB7oVB",
+      "title": null,
+      "caption": null,
+      "alt_text": null,
+      "upload_date": "2026-07-02"
+    },
+    {
+      "image_id": "oi_oqBvY_bsttu_",
+      "image_url": "https://hi.hirey.ai/owner/470/image/oi_oqBvY_bsttu_",
+      "title": null,
+      "caption": null,
+      "alt_text": null,
+      "upload_date": "2026-07-02"
+    },
+    {
+      "image_id": "oi_SirSlT2YYVit",
+      "image_url": "https://hi.hirey.ai/owner/470/image/oi_SirSlT2YYVit",
+      "title": null,
+      "caption": null,
+      "alt_text": null,
+      "upload_date": "2026-07-01"
+    },
     {
       "image_id": "oi_4J1ERuj7Re11",
       "image_url": "https://hi.hirey.ai/owner/470/image/oi_4J1ERuj7Re11",
@@ -28,7 +60,7 @@
     "linkedin": "https://www.linkedin.com/in/lawrence-lou/",
     "twitter": "https://twitter.com/LawrenceLou_ai"
   },
-  "upload_date": "2026-06-29",
+  "upload_date": "2026-07-02",
   "verified": true,
   "data_policy": {
     "default_index": "https://people.hirey.ai/data/people.json",
